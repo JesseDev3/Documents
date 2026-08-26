@@ -49,6 +49,8 @@ SIGFOX Network Control Center
 Customer Applications & Services
 ```
 
+**See Also:** [Wikipedia - SIGFOX](https://en.wikipedia.org/wiki/Sigfox), [Wikipedia - Internet of Things](https://en.wikipedia.org/wiki/Internet_of_things)
+
 ### Key Advantages
 
 - **Extended Battery Life:** Years of operation on AA batteries
@@ -79,6 +81,8 @@ Customer Applications & Services
 ### Overview
 
 **6G Reconfigurable Intelligent Surfaces (RIS)**, also called **Intelligent Reflecting Surfaces (IRS)**, represent a paradigm shift in wireless communications. RIS are programmable metasurfaces that dynamically manipulate electromagnetic waves (amplitude, phase, direction) to optimize signal propagation.
+
+**See Also:** [Wikipedia - 6G](https://en.wikipedia.org/wiki/6G), [Wikipedia - Metasurface](https://en.wikipedia.org/wiki/Metasurface), [Wikipedia - Beamforming](https://en.wikipedia.org/wiki/Beamforming)
 
 ### Core Concept
 
@@ -209,6 +213,8 @@ Spectrum management is governed by international and national bodies that ensure
 - Lower/no acquisition cost
 - Examples: 2.4 GHz (WiFi, Bluetooth), 5 GHz (WiFi), Sub-GHz (SIGFOX, LoRaWAN)
 
+**See Also:** [Wikipedia - Radio spectrum](https://en.wikipedia.org/wiki/Radio_spectrum), [Wikipedia - ISM band](https://en.wikipedia.org/wiki/ISM_band), [Britannica - Wireless Communication](https://www.britannica.com/technology/wireless-communication)
+
 #### 2. Spectrum Bands Relevant to 0G, 5G, 6G
 
 | Band | Frequency | Primary Use | Generation |
@@ -222,6 +228,8 @@ Spectrum management is governed by international and national bodies that ensure
 | **mmWave (FR2)** | 24-100 GHz | Ultra-high capacity 5G/6G | 5G, 6G |
 | **Sub-THz** | 100-300 GHz | Future 6G backhaul | 6G |
 | **THz** | 300+ GHz | 6G frontier | 6G Research |
+
+**See Also:** [Wikipedia - 5G](https://en.wikipedia.org/wiki/5G), [Wikipedia - Millimeter wave](https://en.wikipedia.org/wiki/Millimeter_wave), [Wikipedia - C band](https://en.wikipedia.org/wiki/C_band), [Britannica - Electromagnetic Spectrum](https://www.britannica.com/technology/electromagnetic-spectrum)
 
 ### Spectrum Sharing Mechanisms
 
@@ -248,6 +256,8 @@ Spectrum management is governed by international and national bodies that ensure
 - **Virtual Spectrum Multiplexing:** RIS steers signals to different users on same frequency
 - **Interference Cancellation:** Phase-shift control directs interference away
 - **Reconfigurable Frequency Allocation:** Adapt allocation per RIS element group
+
+**See Also:** [Wikipedia - Cognitive radio](https://en.wikipedia.org/wiki/Cognitive_radio), [Wikipedia - Electromagnetic interference](https://en.wikipedia.org/wiki/Electromagnetic_interference), [Wikipedia - Duplex](https://en.wikipedia.org/wiki/Duplex_(telecommunications))
 
 ### Spectrum Coexistence Requirements
 
@@ -536,6 +546,8 @@ Optical Backhaul:            Plant-to-Cloud data pipeline
 - Backhaul licensing: Dedicated microwave or fiber recommended
 - Phase-shift modulation: Treated as "beamforming" under existing rules
 
+**See Also:** [Wikipedia - Regulation of wireless frequencies](https://en.wikipedia.org/wiki/Regulation_of_wireless_frequencies), [Britannica - Radio Wave](https://www.britannica.com/technology/radio-wave)
+
 #### United States (FCC Regulations)
 
 **Sub-1 GHz (902-928 MHz) for SIGFOX:**
@@ -652,20 +664,104 @@ The future wireless ecosystem will be **heterogeneous, intelligent, and spectrum
 - **IEEE 802.11ax** - High Efficiency WLAN (WiFi 6)
 - **3GPP Release 18** - 6G spectrum and RIS standardization (in progress)
 
-### Organizations
+### Wikipedia References (Wireless Communications & Spectrum)
+
+**Foundational Concepts:**
+- [Wikipedia - Radio Spectrum](https://en.wikipedia.org/wiki/Radio_spectrum)
+- [Wikipedia - Electromagnetic Spectrum](https://en.wikipedia.org/wiki/Electromagnetic_spectrum)
+- [Wikipedia - ISM band](https://en.wikipedia.org/wiki/ISM_band)
+- [Wikipedia - Regulation of wireless frequencies](https://en.wikipedia.org/wiki/Regulation_of_wireless_frequencies)
+
+**Wireless Technologies:**
+- [Wikipedia - SIGFOX](https://en.wikipedia.org/wiki/Sigfox)
+- [Wikipedia - 5G](https://en.wikipedia.org/wiki/5G)
+- [Wikipedia - 6G](https://en.wikipedia.org/wiki/6G)
+- [Wikipedia - Internet of Things](https://en.wikipedia.org/wiki/Internet_of_things)
+- [Wikipedia - LoRaWAN](https://en.wikipedia.org/wiki/LoRaWAN)
+- [Wikipedia - LTE](https://en.wikipedia.org/wiki/LTE_(telecommunication))
+- [Wikipedia - WiFi](https://en.wikipedia.org/wiki/WiFi)
+- [Wikipedia - Bluetooth](https://en.wikipedia.org/wiki/Bluetooth)
+
+**Advanced Technologies:**
+- [Wikipedia - Metasurface](https://en.wikipedia.org/wiki/Metasurface)
+- [Wikipedia - Beamforming](https://en.wikipedia.org/wiki/Beamforming)
+- [Wikipedia - Millimeter wave](https://en.wikipedia.org/wiki/Millimeter_wave)
+- [Wikipedia - Terahertz radiation](https://en.wikipedia.org/wiki/Terahertz_radiation)
+- [Wikipedia - Cognitive radio](https://en.wikipedia.org/wiki/Cognitive_radio)
+- [Wikipedia - Software-defined radio](https://en.wikipedia.org/wiki/Software-defined_radio)
+- [Wikipedia - Reconfigurable Intelligent Surface](https://en.wikipedia.org/wiki/Reconfigurable_Intelligent_Surface) (if available)
+
+**Modulation & Signal Processing:**
+- [Wikipedia - Modulation](https://en.wikipedia.org/wiki/Modulation)
+- [Wikipedia - Phase modulation](https://en.wikipedia.org/wiki/Phase_modulation)
+- [Wikipedia - Amplitude modulation](https://en.wikipedia.org/wiki/Amplitude_modulation)
+- [Wikipedia - Frequency modulation](https://en.wikipedia.org/wiki/Frequency_modulation)
+- [Wikipedia - Frequency-shift keying](https://en.wikipedia.org/wiki/Frequency-shift_keying)
+- [Wikipedia - Phase-shift keying](https://en.wikipedia.org/wiki/Phase-shift_keying)
+
+**Spectrum Concepts:**
+- [Wikipedia - Bandwidth](https://en.wikipedia.org/wiki/Bandwidth)
+- [Wikipedia - Channel (communications)](https://en.wikipedia.org/wiki/Channel_(communications))
+- [Wikipedia - Interference (wave propagation)](https://en.wikipedia.org/wiki/Interference_(wave_propagation))
+- [Wikipedia - Electromagnetic interference](https://en.wikipedia.org/wiki/Electromagnetic_interference)
+- [Wikipedia - Duplex (telecommunications)](https://en.wikipedia.org/wiki/Duplex_(telecommunications))
+- [Wikipedia - Frequency reuse](https://en.wikipedia.org/wiki/Frequency_reuse)
+- [Wikipedia - Fading](https://en.wikipedia.org/wiki/Fading)
+
+**Antenna & Propagation:**
+- [Wikipedia - Antenna (radio)](https://en.wikipedia.org/wiki/Antenna_(radio))
+- [Wikipedia - Radio propagation](https://en.wikipedia.org/wiki/Radio_propagation)
+- [Wikipedia - Path loss](https://en.wikipedia.org/wiki/Path_loss)
+- [Wikipedia - Multipath propagation](https://en.wikipedia.org/wiki/Multipath_propagation)
+- [Wikipedia - Ground wave](https://en.wikipedia.org/wiki/Ground_wave)
+- [Wikipedia - Sky wave](https://en.wikipedia.org/wiki/Sky_wave)
+
+**Communications Fundamentals:**
+- [Wikipedia - Duplex filter](https://en.wikipedia.org/wiki/Duplex_filter)
+- [Wikipedia - Receiver (radio)](https://en.wikipedia.org/wiki/Receiver_(radio))
+- [Wikipedia - Transmitter](https://en.wikipedia.org/wiki/Transmitter)
+- [Wikipedia - Signal-to-noise ratio](https://en.wikipedia.org/wiki/Signal-to-noise_ratio)
+
+### Britannica References (Comprehensive Overview)
+
+- [Britannica - Wireless Communication](https://www.britannica.com/technology/wireless-communication)
+- [Britannica - Radio Wave](https://www.britannica.com/technology/radio-wave)
+- [Britannica - Electromagnetic Spectrum](https://www.britannica.com/technology/electromagnetic-spectrum)
+- [Britannica - Antenna (physics)](https://www.britannica.com/technology/antenna)
+- [Britannica - Telecommunications](https://www.britannica.com/technology/telecommunication)
+
+### Organizations & Resources
 
 - [ITU (International Telecommunication Union)](https://www.itu.int/)
+  - [Wikipedia - ITU](https://en.wikipedia.org/wiki/International_Telecommunication_Union)
 - [3GPP (3rd Generation Partnership Project)](https://www.3gpp.org/)
+  - [Wikipedia - 3GPP](https://en.wikipedia.org/wiki/3GPP)
 - [ETSI (European Telecommunications Standards Institute)](https://www.etsi.org/)
+  - [Wikipedia - ETSI](https://en.wikipedia.org/wiki/ETSI)
 - [FCC (Federal Communications Commission)](https://www.fcc.gov/)
+  - [Wikipedia - FCC](https://en.wikipedia.org/wiki/Federal_Communications_Commission)
 - [ISED Canada](https://www.ic.gc.ca/)
+- [IEEE (Institute of Electrical and Electronics Engineers)](https://www.ieee.org/)
+  - [Wikipedia - IEEE](https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers)
 
 ### Research & Learning Resources
 
 - IEEE Communications Magazine - 6G and RIS articles
+  - [Wikipedia - IEEE Communications Society](https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers)
 - SIGFOX Technology Overview - https://www.sigfox.com/
 - 6G RIS Research - MIT LIDS, University of Toronto, Aalto University
 - Spectrum Sensing Techniques - Cognitive Radio surveys
+- [Wikipedia - Spectrum analyzer](https://en.wikipedia.org/wiki/Spectrum_analyzer)
+- [Wikipedia - Network analyzer](https://en.wikipedia.org/wiki/Network_analyzer_(electrical))
+
+### Additional Related Topics
+
+- [Wikipedia - Quantum key distribution](https://en.wikipedia.org/wiki/Quantum_key_distribution)
+- [Wikipedia - Satellite communication](https://en.wikipedia.org/wiki/Satellite_communication)
+- [Wikipedia - Microwave](https://en.wikipedia.org/wiki/Microwave)
+- [Wikipedia - Submillimeter wave](https://en.wikipedia.org/wiki/Submillimeter_wave)
+- [Wikipedia - Spectrum auction](https://en.wikipedia.org/wiki/Spectrum_auction)
+- [Wikipedia - Channel capacity](https://en.wikipedia.org/wiki/Channel_capacity)
 
 ---
 
