@@ -1,352 +1,1026 @@
----
-title: Modern, scalable systems
----
+# Getting Started: Enterprise Architecture & Deployment Guide
 
-# Outline
-![](https://1drv.ms/i/c/1768df040b33e7f0/IQBIDpPfeJaKT7ATKzqGYA7UAVZ8ZawCLHbAflSJUR5HHN8)
-A comprehensive overview of engineering roles, responsibilities, tech stack, and best practices for building modern, scalable systems.
+A comprehensive guide for setting up enterprise infrastructure, managing identities, deploying applications, and implementing DevOps practices across multiple platforms and cloud providers.
 
-Use Enterprise Linux setup [script](https://github.com/ophelialabs/jb./blob/main/02_learn(iseek)/CSC/development/02_linux/setup/scripts/el9_setup1.sh)
-
-Will update for WSL && VM
+**Estimated timeline:** 4-8 weeks for small-to-medium organizations (50-500 users)
 
 ---
 
-## AWS
-### Core E-commerce
-- [Retail Demo Store](https://github.com/aws-samples/retail-demo-store): This is the definitive AWS retail flagship project. It is a complete e-commerce web application used for workshops. It demonstrates personalized search via Amazon OpenSearch, recommendations using Amazon Personalize, and customer engagement via Amazon Pinpoint.
-- [Retail Store Sample App](https://github.com/aws-containers/retail-store-sample-app/blob/main/README.md): A sample retail application specifically optimized for container orchestration. It provides a mock storefront, product catalog, and shopping cart. The architecture displays how to run microservices across Docker Compose or Kubernetes.
-- [Bookstore Demo App](https://github.com/aws-samples/aws-bookstore-demo-app): A storefront application that showcases how to use purpose-built databases. It uses Amazon DynamoDB for the cart, OpenSearch for full-text search, Amazon Neptune for social recommendations, and Redis for leaderboards.
+## Table of Contents
 
-### AI & Intelligent Assistants
-- [AI Retail Assistant](https://github.com/aws-samples/ai-retail-assistant): A project leveraging the Amazon Reviews fashion dataset. It uses Claude 3 models on Amazon Bedrock to pick product images, answer user queries via Retrieval Augmented Generation (RAG), and perform sentiment analysis.
-- [Intelligent Shopping Assistant](https://github.com/aws-samples/intelligent-shopping-assistant): An advanced code sample focusing on customer assistance workflows. It integrates Amazon Bedrock, Lambda, DynamoDB, OpenSearch Service, and Amazon Personalize to build conversational retail flows.
-- [Sample Retail Hybrid Search](https://github.com/aws-samples/intelligent-shopping-assistant): A repository demonstrating how retailers can build text and image product searches. It connects Amazon OpenSearch to Amazon Titan Multimodal Embeddings via Amazon Bedrock.
-
-### Microservices & Specific Features
-- [Serverless Shopping Cart Microservice](https://github.com/aws-samples/aws-serverless-shopping-cart): A isolated component repository demonstrating a decoupled checkout architecture. It runs completely serverless using Amazon API Gateway, AWS Lambda, Amazon Cognito, and Amazon DynamoDB with a Vue.js frontend.
-- [Fast Secure E-Commerce Demo](https://github.com/aws-samples/fast-secure-ecommerce-demo): An architecture sample highlighting web performance and optimization. It contains a Next.js Server Side Rendered application on EC2 instances behind an ALB, with automated image manipulation using AWS Lambda.
-
-## GCP
-### Core E-Commerce
-- [Online Boutique](https://github.com/googlecloudplatform/microservices-demo): Google's primary cloud-first e-commerce simulation. It contains 11 microservices written in different languages (Go, C#, Node.js) communicating via gRPC. It helps developers learn how to deploy a full shopping cart, catalog, and checkout flow on Google Kubernetes Engine (GKE).
-- [Cymbal Superstore](https://github.com/GoogleCloudPlatform/cymbal-superstore): This repository showcases a modern retail application tailored for AI-assisted development on Google Cloud.
-
-### Data Models & Analytics Workshops
-- [Retail Data Model](https://github.com/GoogleCloudPlatform/retail-data-model): This repository offers standardized definitions to adapt the ARTS Operational Data Model for cloud-native infrastructure.
-- [Data-to-AI Workshop](https://github.com/GoogleCloudPlatform/retail-data-to-ai-workshop): Acts as an end-to-end developer guide for processing retail data streams and building predictive models.
- 
- ### AI & Merchant API Integration
- - **Retail Recommendation Systems**: Google provides specialized Jupyter notebooks, such as the Gemini Retail Use Cases, to show developers how to build multimodal recommendation tools out-of-the-box.
- - **Content API for Shopping**: The [googleads/googleads-shopping-samples](https://github.com/googleads/googleads-shopping-samples) repository contains functional code patterns to sync merchant product feeds directly with Google Shopping engines.
-
-## Target Open Source
-
-- [TGT Github](https://github.com/target)
-| [Open Source](https://opensource.target.com)
-| [TGT Tech](https://tech.target.com/open-source)
-| [TGT CFC](https://opensource.target.com/security)
-| [Possum](https://github.com/target/POSSUM)
-| [MyTime](https://hardware.mytime.com/)
-| [C2 Services](https://kb.synology.com/en-us/C2)
+1. [Enterprise Overview](#enterprise-overview)
+2. [Phase 1: Planning and Assessment](#phase-1-planning-and-assessment)
+3. [Phase 2: Email and Account Creation](#phase-2-email-and-account-creation)
+4. [Phase 3: Integration and Security Setup](#phase-3-integration-and-security-setup)
+5. [Phase 4: Rollout, Training, and Governance](#phase-4-rollout-training-and-governance)
+6. [Architecture Patterns](#architecture-patterns)
+7. [Deployment Strategies](#deployment-strategies)
+8. [Kubernetes & Deployment Guide](#kubernetes--deployment-guide)
+9. [Platform-Specific Guides](#platform-specific-guides)
+10. [ServiceNow Integration](#servicenow-integration)
+11. [Quick Links](#quick-links)
 
 ---
 
-## Frontend & UI
-- **Tech Focus:** [React.js](https://react.dev/), [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5), [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript (ES6+)](https://developer.mozilla.org/en-US/docs/Web/JavaScript), Micro Frontend Architecture.
+## Enterprise Overview
 
-- **State Management & Build Tools:** [Redux](https://redux.js.org/), [Webpack](https://webpack.js.org/), [Babel](https://babeljs.io/).
+This roadmap assumes a **hybrid cloud enterprise environment** integrating:
+- **Azure** (Microsoft 365/Entra ID)
+- **Google Cloud Platform (GCP)**
+- **Apple Services**
+- **Multi-platform deployment** (Java/Spring, Python/Flask, .NET/Aspire, Rust, ROS 2, Q#)
 
-- **Getting Started: (IN PROGRESS**)**
-    1. Clone the repo: `git clone https://github.com/jlabclouds/outline.git` **
-    2. Install dependencies: `npm install` **
-    3. Start development server: `npm start` **
-    4. Explore micro frontend modules under `/src/microfrontends` **
-    5. See [React Docs](https://react.dev/) for component patterns
+**Key Principles:**
+- Identity-first security model with zero-trust architecture
+- Separation of concerns by platform function
+- Centralized IAM via Azure Entra ID
+- Compliance-first design (GDPR, HIPAA, SOX)
+- Least privilege access and continuous verification
 
 ---
 
-To integrate a scheduling system that aligns with the TimeGo app, you can follow these steps:
+## Phase 1: Planning and Assessment
 
-### 1. **Backend API for Scheduling**
+**Duration:** 1-2 weeks
 
-    - Create a backend API to manage schedules. This API should handle:
-      - Adding, updating, and deleting shifts.
-      - Fetching shifts for a specific user.
-      - Handling time-off requests.
-    - Example API endpoints:
-      - `GET /api/schedule` - Fetch upcoming shifts.
-      - `POST /api/schedule` - Add a new shift.
-      - `PUT /api/schedule/:id` - Update a shift.
-      - `DELETE /api/schedule/:id` - Delete a shift.
+### Tasks
 
-### 2. **Database Design**
+1. **Assess Current Environment**
+   - Inventory existing email systems and user directories
+   - Evaluate current cloud usage and shadow IT
+   - Identify compliance requirements (GDPR, HIPAA, SOX)
+   - Determine data residency requirements
 
-    - Use a database to store scheduling data. Example schema:
-      - **Shifts Table**:
-         - `id`: Unique identifier.
-         - `user_id`: ID of the user assigned to the shift.
-         - `date`: Date of the shift.
-         - `time`: Time of the shift.
-         - `role`: Role for the shift.
-      - **TimeOffRequests Table**:
-         - `id`: Unique identifier.
-         - `user_id`: ID of the user requesting time off.
-         - `start_date`: Start date of the time off.
-         - `end_date`: End date of the time off.
-         - `status`: Status of the request (e.g., pending, approved, denied).
+2. **Define User Roles and Access Levels**
+   - Categorize users: Employees, contractors, external partners
+   - Determine separation of concerns:
+     - Azure: Internal productivity, Microsoft 365, identity management
+     - GCP: Compute, storage, analytics workloads
+     - Apple: Device management and authentication
 
-### 3. **Frontend Integration**
+3. **Choose Primary Identity Provider**
+   - Select **Azure Entra ID** as central IAM hub
+   - Plan federation with GCP and Apple via SAML/OAuth
 
-    - Update the `fetchSchedule` function to interact with the backend API.
-    - Add forms for users to request time off or add shifts.
-    - Example for requesting time off:
-      ```html
-      <div class="card">
-            <h2>Request Time Off</h2>
-            <form id="timeOffForm">
-                 <label for="startDate">Start Date:</label>
-                 <input type="date" id="startDate" name="startDate" required>
-                 <label for="endDate">End Date:</label>
-                 <input type="date" id="endDate" name="endDate" required>
-                 <button type="submit" class="button">Submit Request</button>
-            </form>
-      </div>
-      <script>
-            document.getElementById('timeOffForm').addEventListener('submit', async (event) => {
-                 event.preventDefault();
-                 const startDate = document.getElementById('startDate').value;
-                 const endDate = document.getElementById('endDate').value;
-                 try {
-                      const response = await fetch('/api/timeoff', {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ startDate, endDate })
-                      });
-                      if (!response.ok) throw new Error('Failed to submit request');
-                      alert('Time off request submitted successfully!');
-                 } catch (error) {
-                      console.error(error);
-                      alert('Error submitting time off request.');
-                 }
-            });
-      </script>
-      ```
+4. **Budget and Procurement**
+   - Acquire Azure subscriptions, GCP credits, Apple Business Manager licenses
+   - Budget for third-party tools (BitTitan/Microsoft Mover for email migration)
+   - Plan for implementation and professional services
 
-### 4. Real-Time Updates
-  - Use WebSockets or polling to provide real-time updates for schedule changes or notifications.
+---
 
-### 5. Authentication
-  - Ensure the scheduling system is secure by implementing user authentication and role-based access control.
+## Phase 2: Email and Account Creation
 
-### 6. Mobile-Friendly Design
-  - Ensure the UI is responsive and works well on mobile devices, aligning with the MyTimeGo app's design.
+**Duration:** 1-2 weeks
 
-By implementing these steps, you can create a robust scheduling system that integrates seamlessly with the MyTimeGo app.
+### 2.1 Set Up Azure Tenant and Entra ID
 
-
-## Cart & Checkout
-- [Google Pay](https://github.com/google-pay/react-store): Provides a complete reference implementation of a digital storefront built with React, designed specifically to showcase how to integrate and handle the Google Pay API in a web environment.
- 
-- **Scope:** 
-  - Online, brick-and-mortar, Delivery, Google Express; **critical impact on guest experience**
-
-| **Languages** | **Frameworks** | **Databases** | **Events** |
-| ------------- | -------------- | ------------- | ---------- |
-| [Kotlin](https://kotlinlang.org/) | [Micronaut](https://micronaut.io/) | [Postgres](https://www.postgresql.org/) | [Kafka](https://kafka.apache.org/) |
-| [Groovy](https://groovy-lang.org/) | [Ratpack](https://ratpack.io/) | [Cassandra](https://cassandra.apache.org/) | |
-| [JAM](https://lets-jam.org/docs/jam/index.html) | | | |
-
-**Architecture:** Microservices, multi-tenant
-
-- **Deployment Steps:**
-    1. **Build Service Module**
-    ```bash
-    ./gradlew build
-    ```
-    2. **Run Database Migrations**
-    ```bash
-    flyway migrate
-    ```
-    3. Deploy via CI/CD (see [CI/CD & DevOps](#cicd--devops))
-    4. Monitor events with [Kafka dashboard](https://grafana.com/grafana/dashboards/18276-kafka-dashboard/)
-
-**Example: [Kotlin](https://kotlinlang.org/docs/home.html) Service Endpoint**
-```kotlin
-@Get("/cart")
-fun getCart(): HttpResponse<Cart> = HttpResponse.ok(cartService.fetchCart())
+```bash
+# Create Azure tenant via portal.azure.com
+# 1. Create tenant in Azure Portal
+# 2. Configure custom domain (e.g., @company.com)
+# 3. Verify domain ownership via DNS
+# 4. Enable Microsoft 365 services
 ```
 
+**Steps:**
+- Create Azure tenant via [portal.azure.com](https://portal.azure.com)
+- Configure custom domain and verify ownership
+- Enable Microsoft 365 for email (Exchange Online)
+- Create initial admin accounts
+- Set up **Multi-Factor Authentication (MFA)**
+- Implement **Conditional Access Policies**
+
+### 2.2 Create GCP Accounts
+
+- Sign up via [console.cloud.google.com](https://console.cloud.google.com)
+- Set up GCP organization and projects
+- Create Google Workspace for email (Gmail) with same domain
+- Enable domain verification
+- Configure SSO via SAML (federate with Entra ID later)
+
+### 2.3 Set Up Apple Accounts
+
+- Enroll in [Apple Business Manager](https://business.apple.com)
+- Create managed Apple IDs for users
+- Configure Apple School Manager (if applicable for education)
+
+### 2.4 Migrate or Create User Accounts
+
+```bash
+# Option 1: Sync from on-premises AD
+# Using Azure AD Connect
+
+# Option 2: Bulk import via CSV
+# Use Microsoft 365 admin center for bulk user creation
+```
+
+**Methods:**
+- Azure AD Connect for on-premises AD sync
+- CSV bulk import via Microsoft 365 admin center
+- Create email aliases/forwarding rules for unified access
+
+### 2.5 Assign Licenses
+
+| Platform | License Type | Best For |
+|----------|-------------|----------|
+| Azure | Microsoft 365 E3/E5 | Internal productivity, email, collaboration |
+| GCP | Google Workspace Business | Compute workloads, cloud-native apps |
+| Apple | Device Management Licenses | Device enrollment, MDM policies |
+
 ---
 
-## Engineering Roles
+## Phase 3: Integration and Security Setup
 
-### Lead Java Developer
+**Duration:** 2-4 weeks
 
-- **Experience:** [Java/J2EE](https://www.oracle.com/java/technologies/appmodel.html), [Kotlin](https://kotlinlang.org/docs/home.html), SQL/NoSQL (RDBMS: [SQL Server](https://www.microsoft.com/en-us/sql-server), [OCI DB](https://www.oracle.com/database/))([Postgres](https://www.postgresql.org/), [MongoDB](https://www.mongodb.com/), [Cassandra](https://cassandra.apache.org/_/index.html), [Graph DB](https://graphdb.ontotext.com/)), Python, Ruby, [Chef](https://www.chef.io/), [Drone](https://drone.io/), [Kubernetes containers](https://kubernetes.io/docs/concepts/containers/), Cloud tech.
-  
-**Lifecycle:** At least one full-cycle implementation of a major project.
- - DB Browser for SQLite
- | SQL Server
+### 3.1 Federate Identities
 
-### Lead Engineer
-
-- **Responsibilities:**
-    - [Envoy](https://www.envoyproxy.io/) & [HAProxy](https://www.haproxy.org/) API Gateway management
-    - Sidecar Proxy Dev-in house written in [GO](https://pkg.go.dev/github.com/googlecloudplatform/pgadapter/samples/sidecar-proxy)
-    - Server Fleet Management: [Ansible](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6)
-    - Control Plane: [Go](https://github.com/envoyproxy/go-control-plane), Kafka, Redis/MongoDB
-    - CDN Strategy & Migration: [Akamai](https://www.akamai.com/), [Fastly](https://www.fastly.com/)
-    - API Monitoring & Security: Implement solutions/tools
-- **Focus:** API gateways and microservice Kubernetes architectures, JVM-based services, high observability.
-
-**Example: API Gateway Config (Envoy)**
+**GCP Federation with Entra ID:**
 ```yaml
-static_resources:
-  listeners:
-  - name: listener_0
-    address:
-      socket_address: { address: 0.0.0.0, port_value: 8080 }
-    filter_chains:
-    - filters:
-      - name: envoy.filters.network.http_connection_manager
+# SAML Configuration in GCP Workspace
+# 1. Configure SAML SSO in GCP
+# 2. Set up Entra ID as Identity Provider
+# 3. Map Entra ID groups to GCP roles
+# 4. Users inherit RBAC roles (e.g., GCP Storage Viewer)
 ```
 
-### Lead Engineer - Backend
+**Apple Federation:**
+- Use "Sign in with Apple" as external IdP in Entra ID External ID
+- Map to Entra ID roles for conditional access
+- Example: Apple users get limited access via RBAC policies
 
-- **Responsibilities:**
-    - [Featurestore](https://jfrog.com/blog/what-is-a-feature-store-in-ml-and-do-i-need-one/), [Model ops](https://www.modelop.com/ai-governance-software), experimentation, monitoring, explainability, continuous improvement
-    - GCP, [MLOps](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning), scalable APIs, [ML pipelines](https://developers.google.com/machine-learning/managing-ml-projects/pipelines)
-    - Deploy and monitor ML models in production
+### 3.2 Configure Storage and Collaboration Tools
 
-### Lead Engineer - Fullstack
+**Integrate Google Drive, Dropbox, OneDrive:**
 
-- **Responsibilities:**
-    - Lead [scrum teams](https://www.atlassian.com/agile/scrum)
-    - [Java](https://www.java.com/), [Kotlin](https://kotlinlang.org/docs/home.html), React, [Spring Boot](https://spring.io/projects/spring-boot)/[Micronaut](https://micronaut.io/)
-    - [Run SpringBoot as Micronaut](https://guides.micronaut.io/latest/micronaut-spring-boot-maven-java.html)
-    - Build highly scalable distributed systems
-    - Deep knowledge of domain and product features
+```python
+# Using Microsoft Graph API and Google Drive API
+from msgraph.core import GraphClient
+from google.oauth2.credentials import Credentials
+
+# Sync files bidirectionally
+# 1. Authenticate both accounts via OAuth
+# 2. Select folders to sync
+# 3. Set bidirectional sync (changes propagate)
+```
+
+**Options:**
+- Use Microsoft Mover (mover.io) for migration/sync
+- Use Zapier for automated workflows
+- Implement API-based sync using Google Drive API + Microsoft Graph API
+
+### 3.3 Implement Security Policies
+
+- **Data Loss Prevention (DLP):** Prevent sensitive data leakage
+- **Encryption:** Enable encryption at rest and in transit
+- **Audit Logging:** Track all access and changes
+- **Conditional Access:** Enforce MFA, device compliance, location-based policies
+
+### 3.4 Test Access
+
+- Pilot with small user group
+- Validate SSO across platforms
+- Test email routing and delivery
+- Verify device enrollment
+- Document issues and resolutions
 
 ---
 
-## Tech Stack
+## Phase 4: Rollout, Training, and Governance
 
-- **Languages & Frameworks:** [Kotlin](https://kotlinlang.org/docs/home.html), [Java](https://www.oracle.com/java/technologies/appmodel.html), [Groovy](https://groovy-lang.org/), [Spring Boot](https://spring.io/projects/spring-boot), [Micronaut](https://micronaut.io/), [http4k](https://www.http4k.org/), [KTOR](https://ktor.io/), [Gradle](https://gradle.org/), JavaScript, TypeScript, ReactJS, [Junit](https://junit.org/), [Spock](https://github.com/spockframework/spock), [KotlinTest](https://kotlinlang.org/api/core/kotlin-test/)
-- **Event Streaming:** [Kafka](https://www.confluent.io/learn/event-streaming/#when-to-use-event-streaming-vs-batch-processing), [GCP](https://cloud.google.com/products/managed-service-for-apache-kafka?hl=en)
-- **Databases:** Postgres, Cassandra, MongoDB, RocksDB, InfluxDB, ELK Stack, Exadata
-- **ML & Data:** [Vertex AI](https://cloud.google.com/vertex-ai), [BigQueryML](https://www.cloudskillsboost.google/course_templates/626), [Kubeflow](https://cloud.google.com/discover/what-is-kubeflow?hl=en), [Cloud Composer](https://cloud.google.com/composer), [FastAPI](https://fastapi.tiangolo.com/), Flask: [VS](https://learn.microsoft.com/en-us/visualstudio/python/learn-flask-visual-studio-step-01-project-solution?view=vs-2022), [Jinja-VS](), [VSC](https://code.visualstudio.com/docs/python/tutorial-flask), [Flask](https://palletsprojects.com/)
+**Duration:** 1-2 weeks
 
-**Example: Spring Boot Application**
-```java
-@SpringBootApplication
-public class Application {
-    public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-    }
-}
+### 4.1 Full Rollout
+
+- Migrate remaining users in waves
+- Use phased deployment to minimize disruption
+- Maintain rollback procedures
+- Monitor each phase for issues
+
+### 4.2 User Training
+
+- Provide guides for accessing emails across platforms
+- Training on Outlook, Gmail, Teams collaboration
+- Manage device enrollment and MDM
+- Document common troubleshooting steps
+
+### 4.3 Monitoring and Compliance
+
+- Set up Azure Monitor for Azure resources
+- Configure GCP Cloud Logging
+- Deploy Apple device management dashboards
+- Establish security monitoring and alerting
+
+### 4.4 Ongoing Management
+
+- Establish change management procedures for new hires/terminations
+- Schedule quarterly compliance audits
+- Regular user access reviews (UAR)
+- Maintain documentation in central wiki (SharePoint)
+
+---
+
+## Architecture Patterns
+
+### Individual Backend Setup
+
+**Linear Development Pipeline:**
+
+```
+1. Application Development
+   ├── Choose Language/Framework
+   ├── Develop Features
+   └── Write Tests
+
+2. Build Phase
+   ├── Compile/Transpile
+   ├── Run Tests
+   ├── Code Quality Checks
+   └── Generate Artifacts
+
+3. Containerization
+   ├── Create Dockerfile
+   ├── Build Docker Image
+   └── Test Container
+
+4. Registry Push
+   ├── Tag Image
+   ├── Authenticate
+   └── Push to Registry
+
+5. Kubernetes Deployment
+   ├── Create Deployment Manifest
+   ├── Deploy to K8s Cluster
+   ├── Configure Services
+   └── Setup Ingress
+
+6. Enterprise Integration
+   ├── Connect to Services
+   ├── Configure Logging
+   ├── Setup Monitoring
+   └── Enable Scaling
+```
+
+### Multi-Service Architecture
+
+**Synchronous Communication (REST/gRPC):**
+```
+Service A → HTTP/gRPC → Service B → Database → Response
+```
+
+**Asynchronous Communication (Message Queue):**
+```
+Service A → Message Broker → Service B
+Service A → Message Broker → Service C
+Message Broker → Persistence → Replay
+```
+
+**Service Mesh (Istio):**
+```
+Ingress Gateway
+    ↓
+Virtual Service
+    ↓
+Destination Rule
+    ↓
+Service Mesh Sidecar
+    ↓
+Load Balancing
+    ↓
+Service Pod
+```
+
+### Database Architecture
+
+**Java/Spring:**
+- JPA/Hibernate ORM
+- Spring Data repositories
+- Database migrations (Flyway, Liquibase)
+- Connection pooling (HikariCP)
+
+**Python/Flask:**
+- SQLAlchemy ORM
+- Alembic migrations
+- Async drivers (asyncpg, aiomysql)
+
+**.NET/Aspire:**
+- Entity Framework Core
+- Dapper for micro-ORMs
+- Multiple databases support
+
+**Rust:**
+- SQLx for type-safe SQL
+- Tokio async runtime
+- Connection pooling (r2d2, deadpool)
+
+### Microservices Patterns
+
+**API Gateway Pattern:**
+```
+Client → API Gateway → Service Mesh → Services
+         ├─ Authentication
+         ├─ Rate Limiting
+         ├─ Request Routing
+         ├─ Response Aggregation
+         └─ Load Balancing
+```
+
+**Circuit Breaker Pattern:**
+```
+Healthy State
+    ↓
+Request Fails → Open State (Reject)
+    ↓
+Half-Open (Test Request)
+    ↓
+Success → Healthy / Failure → Open
+```
+
+**Saga Pattern (Distributed Transactions):**
+```
+Service A (Start) → Service B (Process) → Service C (Commit)
+    ↓
+All Succeed or Compensating Transactions Rollback
+```
+
+### Resilience Patterns
+
+**Retry Logic:**
+- Exponential Backoff
+- Jitter to prevent thundering herd
+- Max retries and timeouts
+- Circuit breaker integration
+
+**Bulkhead Pattern:**
+```
+Thread Pool A ─ Service A
+Thread Pool B ─ Service B
+Thread Pool C ─ Service C
+(Isolation prevents cascading failures)
+```
+
+**Timeout Pattern:**
+- Connection timeout
+- Read timeout
+- Overall request timeout
+
+### Caching Strategies
+
+**Cache-Aside (Lazy Loading):**
+1. Request comes in
+2. Check cache
+3. Hit → Return
+4. Miss → Query DB
+5. Update cache
+6. Return to client
+
+**Write-Through:**
+- Write to cache first
+- Write to DB
+- Return success
+
+**Cache Invalidation:**
+- TTL expiration
+- Event-based invalidation
+- LRU eviction
+- Explicit invalidation
+
+---
+
+## Deployment Strategies
+
+### Key Deployment Considerations
+
+**Mise en Place (Preparation):**
+1. Read requirements thoroughly
+2. Gather all tools and resources
+3. Prepare infrastructure
+4. Organize workstation
+5. Prepare equipment (pre-test, pre-configure)
+
+**Think in Building Blocks:**
+- Modular components
+- Reusable patterns
+- Composable services
+- Version management
+
+### Multi-Platform Support
+
+| Platform | Framework | Package Manager | Build Tool | Container |
+|----------|-----------|-----------------|-----------|-----------|
+| Java | Spring Boot | Maven/Gradle | Gradle | Docker |
+| Python | Flask/Django/FastAPI | pip | setuptools | Docker |
+| .NET | Aspire/ASP.NET Core | NuGet | MSBuild | Docker |
+| Rust | Cargo | Cargo | Cargo | Docker |
+| C/C++ | Native | N/A | CMake | Docker |
+| ROS 2 | Robotics OS | rosdep | colcon | Docker |
+| Q# | Quantum | NuGet | dotnet | Docker |
+
+### Cloud Providers
+
+- **AWS:** AWS Portal, BrowserStack, Appium integration
+- **Azure:** App Service, Functions, Container Apps, AKS
+- **Google Cloud:** Cloud Run, Compute Engine, GKE
+- **Oracle Cloud:** OCI Integration, Container Registry
+
+### Development Workflow
+
+```bash
+# 1. Local Development
+cd my-project
+code .
+
+# 2. Build Locally
+docker build -t myapp:1.0 .
+docker run -p 8080:8080 myapp:1.0
+
+# 3. Test Container
+# Run unit tests, integration tests
+
+# 4. Push to Registry
+docker tag myapp:1.0 registry.example.com/myapp:1.0
+docker push registry.example.com/myapp:1.0
+
+# 5. Deploy to Kubernetes
+kubectl apply -f deployment.yaml
+
+# 6. Verify Deployment
+kubectl rollout status deployment/myapp
+kubectl logs deployment/myapp
 ```
 
 ---
 
-## CI/CD & DevOps
-[Strelka UI](https://github.com/target/strelka-ui?tab=readme-ov-file)
-| [Vela CI/CD](https://go-vela.github.io/docs/installation/install-vela)
-| [Grafana](https://grafana.com/) (Observability Dashboards)
-- **Code Pipelines:** Docker, Drone, [Vela](https://github.com/go-vela/vela), [JFrog](https://jfrog.com)
-- **DevOps Tools:** Jenkins, Git, Kubernetes
-- **Steps:**
-    1. Push code to repo
-    2. Automated build/test via CI pipeline
-    3. Container deploy to Kubernetes
-    4. Monitoring via dashboards (see below)
- 
-**Example: Drone CI Pipeline**
+## Kubernetes & Deployment Guide
+
+### Kubernetes Architecture
+
+**Control Plane Components:**
+- API Server: RESTful API for cluster management
+- Scheduler: Assigns pods to nodes
+- Controller Manager: Manages controllers
+- etcd: Distributed key-value store for cluster state
+
+**Worker Node Components:**
+- kubelet: Node agent
+- kube-proxy: Network proxy
+- Container Runtime: Docker or containerd
+
+### Core Kubernetes Objects
+
+#### Namespaces
+
 ```yaml
-pipeline:
-  build:
-    image: gradle:latest
-    commands:
-      - ./gradlew build
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: production
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: staging
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: development
 ```
 
----
+#### Deployments
 
-## Metrics & Visualizations
-
-- **Dashboards:** [Grafana](https://grafana.com/)
-- **Log Aggregation:** Logstash, Kibana
-- **Steps:**
-    1. Set up Grafana dashboard
-       - Connect to data sources for metrics.
-    2. Aggregate logs with Logstash & Kibana (ELK Stack).
-       - [ELK Stack](https://www.elastic.co/what-is/elk-stack)
-    4. Monitor system health and alerting
-       - Configure alerting rules.
-
-**Example: Grafana Dashboard JSON**
-```json
-{
-  "dashboard": {
-    "title": "System Metrics",
-    "panels": [{ "type": "graph", "targets": [{ "expr": "cpu_usage" }] }]
-  }
-}
-```
-
----
-
-## Cloud & Compute Platforms
-
-- **Cloud:** [Google Cloud Platform (GCP)](https://cloud.google.com/)
-- **Elastic Compute:** [Kubernetes](https://kubernetes.io/)
-
-**Example: Kubernetes Deployment**
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app
+  name: app-deployment
+  namespace: production
 spec:
   replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: myapp
+      version: v1
   template:
+    metadata:
+      labels:
+        app: myapp
+        version: v1
     spec:
+      serviceAccountName: app-sa
       containers:
       - name: app
-        image: my-app:latest
+        image: registry/myapp:1.0
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+          name: http
+        env:
+        - name: ENVIRONMENT
+          value: "production"
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: db-credentials
+              key: password
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
 ```
 
----
+#### Services
 
-## Best Practices & Culture
-
-- **Values:** Diversity, inclusion, collaboration
-- **Architecture:** Distributed microservices, Kubernetes, event-based (Kafka), CI/CD pipelines
-- **Automation:** Everything-as-code, operational excellence, canary/A/B testing, high observability/logs/metrics
-- **Approach:** Proactive issue triage, edge computing, elastic infrastructure, agile ceremonies
-- **Learning:** Experiment with new tech, continuous improvement
-
-**Example: Canary Deployment Annotation**
 ```yaml
+apiVersion: v1
+kind: Service
 metadata:
-  annotations:
-    deploymentstrategy: canary
+  name: app-service
+  namespace: production
+spec:
+  type: ClusterIP
+  selector:
+    app: myapp
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
+    name: http
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-loadbalancer
+  namespace: production
+spec:
+  type: LoadBalancer
+  selector:
+    app: myapp
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
+```
+
+#### ConfigMaps and Secrets
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: production
+data:
+  app.properties: |
+    log.level=INFO
+    feature.flag=true
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: db-credentials
+  namespace: production
+type: Opaque
+data:
+  username: dXNlcm5hbWU=  # base64 encoded
+  password: cGFzc3dvcmQ=  # base64 encoded
 ```
 
 ---
 
-## References & Useful Links
+## Platform-Specific Guides
 
-- [React Documentation](https://react.dev/)
-- [Kotlin Documentation](https://kotlinlang.org/docs/home.html)
-- [Spring Boot Guides](https://spring.io/guides)
-- [Micronaut Guides](https://guides.micronaut.io/)
-- [Kafka Introduction](https://kafka.apache.org/documentation/)
-- [Kubernetes Concepts](https://kubernetes.io/docs/concepts/)
-- [Google Cloud Documentation](https://cloud.google.com/docs)
-- [Grafana Tutorials](https://grafana.com/tutorials/)
-- [CI/CD Best Practices](https://martinfowler.com/bliki/ContinuousDelivery.html)
+### Java / Spring Framework
+
+**Project Setup:**
+```bash
+spring boot new --type gradle --language java \
+  --name myapp \
+  --package-name com.example.myapp
+```
+
+**Key Dependencies:**
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+```
+
+**Docker Configuration:**
+```dockerfile
+FROM openjdk:17-jdk-alpine
+COPY target/myapp.jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
+```
+
+**Best Practices:**
+- Use Spring Boot for rapid development
+- Implement Spring Security for authentication
+- Use Spring Cloud for microservices
+- Monitor with Spring Boot Actuator
+- Externalize configuration with application.properties
 
 ---
 
-**For more details, see respective module directories and check the project wiki.**
+### Python / Flask
+
+**Project Structure:**
+```
+myapp/
+├── app.py
+├── config.py
+├── requirements.txt
+├── tests/
+│   ├── __init__.py
+│   └── test_app.py
+└── Dockerfile
+```
+
+**Application Setup:**
+```python
+from flask import Flask, jsonify
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app)
+
+@app.route('/api/health', methods=['GET'])
+def health():
+    return jsonify({"status": "healthy"}), 200
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+```
+
+**Docker Setup:**
+```dockerfile
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:5000"]
+```
+
+---
+
+### .NET / Aspire
+
+**Features:**
+- Cloud-native .NET framework
+- Entity Framework Core ORM
+- Minimal APIs
+- Built-in observability
+
+**Project Setup:**
+```bash
+dotnet new aspire-starter -n myapp
+cd myapp
+dotnet build
+```
+
+---
+
+### Rust / Cargo
+
+**Features:**
+- Memory-safe systems programming
+- High-performance networking
+- Type-safe SQL with SQLx
+- Async runtime (Tokio)
+
+**Project Setup:**
+```bash
+cargo new myapp
+cd myapp
+cargo add tokio actix-web
+cargo build --release
+```
+
+---
+
+### ROS 2 / Robotics
+
+**Framework:** Robot Operating System 2
+- Distributed computing for robotics
+- DRAKE simulation integration
+- Pub/Sub middleware
+- Multi-language support (C++, Python)
+
+---
+
+### Q# / Quantum Computing
+
+**Features:**
+- Quantum computing with classical hybrid execution
+- AI integration
+- Job submission to quantum hardware
+- QIR code preparation
+
+---
+
+## Implementation Roadmap
+
+### Phase 1: Foundation Setup (Weeks 1-4)
+
+**Objectives:**
+- Establish Linux enterprise environment
+- Deploy Docker containerization
+- Deploy first application
+- Create basic CI/CD pipeline
+
+**Key Tasks:**
+- [ ] Infrastructure provisioning (cloud VPC, security groups)
+- [ ] Linux environment (RHEL/CentOS) with Docker
+- [ ] Container registry setup (Docker Hub, JFrog, OCR)
+- [ ] First application (Java/Python/.NET)
+- [ ] CI/CD foundation (GitHub Actions, GitLab, Jenkins)
+
+**Estimate:** 3-4 weeks
+
+---
+
+### Phase 2: Multi-Platform Support (Weeks 5-10)
+
+**Objectives:**
+- Integrate Java/Spring
+- Integrate Python/Flask
+- Integrate .NET/Aspire
+- Standardize build processes
+- Create framework templates
+
+**Key Tasks:**
+- [ ] Create Spring Boot template
+- [ ] Create Flask project template
+- [ ] Create .NET Aspire template
+- [ ] Standardize build artifact naming
+- [ ] Implement version management
+
+**Estimate:** 5-6 weeks
+
+---
+
+### Phase 3: Kubernetes Orchestration (Weeks 11-16)
+
+**Objectives:**
+- Deploy AKS/GKE/EKS cluster
+- Implement service mesh (Istio)
+- Set up ingress and load balancing
+- Configure autoscaling
+
+**Key Tasks:**
+- [ ] Provision Kubernetes cluster
+- [ ] Deploy Istio service mesh
+- [ ] Configure network policies
+- [ ] Set up monitoring (Prometheus, Grafana)
+- [ ] Implement autoscaling policies
+
+**Estimate:** 6-8 weeks
+
+---
+
+### Phase 4: Enterprise Integration (Weeks 17-20)
+
+**Objectives:**
+- Integrate with identity management (Entra ID)
+- Set up observability and logging
+- Implement security policies
+- Establish governance
+
+**Key Tasks:**
+- [ ] Identity federation setup
+- [ ] Centralized logging (ELK, Splunk)
+- [ ] Distributed tracing (Jaeger)
+- [ ] Security scanning and compliance
+- [ ] Backup and disaster recovery
+
+**Estimate:** 4 weeks
+
+---
+
+## ServiceNow Integration
+
+### Overview
+
+ServiceNow provides IT Service Management (ITSM), asset management, and workflow automation capabilities.
+
+**Important:** Ensure all processes are documented and sanctioned by IT/Security leadership.
+
+### Requesting Access via ServiceNow
+
+#### For Standard Users
+
+1. **Search the Catalog:**
+   - Log in to ServiceNow instance
+   - Search for "Confluence Access," "Jira Access," or desired service
+
+2. **Fill Out Request:**
+   - Specify your role
+   - Indicate required project/space
+   - Request permission level (Read-only, Contributor, Admin)
+
+3. **Approval Workflow:**
+   - Request routes to manager or application owner
+   - Approval is tracked and auditable
+
+4. **Automated Provisioning:**
+   - If IntegrationHub spoke is configured
+   - User automatically added to correct group
+
+#### For Admins (Setting Up Integration)
+
+**Jira Spoke Configuration:**
+```
+1. Navigate to IntegrationHub > Spokes
+2. Locate Jira Spoke for Jira Cloud
+3. Generate Atlassian API Token from account security settings
+4. Configure OAuth 2.0 connection
+5. Map ServiceNow fields to Jira issues
+```
+
+**Confluence Spoke Configuration:**
+```
+1. Open Atlassian Developer Portal
+2. Generate API Token
+3. Configure Confluence Cloud Spoke in ServiceNow
+4. Test user provisioning
+5. Monitor sync status
+```
+
+### Onboarding Process
+
+**After Access Approval:**
+
+1. **Access Onboarding Dashboard:**
+   - ServiceNow Employee Center
+   - View "Journey" or "Onboarding Task List"
+   - Microsoft Teams integration available
+
+2. **Complete Excel-based Forms:**
+   - Data imports via Microsoft 365 Excel Spoke
+   - Sync with OneDrive/SharePoint
+   - Equipment and skill tracking
+
+3. **Sign PDF Documents:**
+   - Sign via browser signature pad
+   - Or use Adobe Acrobat Sign / DocuSign integration
+   - Digital signatures legally binding
+
+4. **Receive Outlook Notifications:**
+   - Email alerts for each step
+   - Actionable messages for approvals
+   - Direct approval from email
+
+### Budget for ServiceNow Implementation
+
+**Industry Benchmarks (3x Rule):** For every $1 spent on licensing, expect $3 on implementation/maintenance.
+
+| Category | Annual Cost | Notes |
+|----------|-------------|-------|
+| ServiceNow Licensing | $100-200/user/month | Basic ITSM vs. Pro tiers |
+| Jira/Confluence | $22-49+/user/month | Standard vs. Premium |
+| Integration Tools | $2,000-12,000+/year | IntegrationHub vs. third-party |
+| Implementation | $30,000-150,000+ | Setup for mid-size to enterprise |
+| Admin Salaries | $120,000+/year | Certified ServiceNow admin |
+
+### Business Case for Sponsorship
+
+**Executive Alignment:**
+- **CIO:** Digital transformation, system-wide visibility
+- **CTO:** IT Service Management + agile development alignment
+- **VP IT Operations:** Reduce ticket resolution time, manual errors
+- **Head of Engineering:** Cross-team collaboration, documentation
+
+**Key Benefits:**
+- **Operational Efficiency:** Automate support-to-dev workflow
+- **Reduced Rework:** Eliminate manual data entry errors
+- **Faster Resolution:** Real-time bi-directional sync
+- **Enhanced Transparency:** Unified view across departments
+- **Compliance & Auditability:** Permanent audit trail
+
+---
+
+## Quick Links
+
+### Cloud Providers
+
+| Service | Link | Purpose |
+|---------|------|---------|
+| Microsoft Azure | [portal.azure.com](https://portal.azure.com) | Cloud infrastructure, Microsoft 365 |
+| Google Cloud | [console.cloud.google.com](https://console.cloud.google.com) | Compute, storage, analytics |
+| AWS | [aws.amazon.com](https://aws.amazon.com) | Cloud infrastructure |
+| Apple Business | [business.apple.com](https://business.apple.com) | Device management |
+| IBM Cloud | [cloud.ibm.com](https://cloud.ibm.com) | Enterprise cloud services |
+
+### Development Platforms
+
+| Platform | Framework | Link | Purpose |
+|----------|-----------|------|---------|
+| Java | Spring Boot | [start.spring.io](https://start.spring.io) | Enterprise applications |
+| Python | Flask | [flask.palletsprojects.com](https://flask.palletsprojects.com) | Web applications |
+| .NET | Aspire | [learn.microsoft.com/aspire](https://learn.microsoft.com/en-us/dotnet/aspire/) | Cloud-native apps |
+| Rust | Cargo | [rust-lang.org](https://www.rust-lang.org) | Systems programming |
+| ROS 2 | Robotics | [docs.ros.org](https://docs.ros.org/en/humble/) | Robotics systems |
+
+### DevOps & CI/CD
+
+| Tool | Link | Purpose |
+|------|------|---------|
+| Azure DevOps | [dev.azure.com](https://dev.azure.com) | CI/CD, repos, pipelines |
+| GitHub Actions | [github.com](https://github.com) | Workflow automation |
+| GitLab | [gitlab.com](https://gitlab.com) | Git + CI/CD platform |
+| Jenkins | [jenkins.io](https://www.jenkins.io) | Automation server |
+| CircleCI | [circleci.com](https://circleci.com) | CI/CD platform |
+
+### Collaboration & Documentation
+
+| Tool | Link | Purpose |
+|------|------|---------|
+| Confluence | [atlassian.com/confluence](https://www.atlassian.com/software/confluence) | Team documentation |
+| Jira | [atlassian.com/jira](https://www.atlassian.com/software/jira) | Issue tracking |
+| Slack | [slack.com](https://slack.com) | Team communication |
+| ServiceNow | [servicenow.com](https://www.servicenow.com) | IT Service Management |
+| SharePoint | [microsoft.com/sharepoint](https://www.microsoft.com/en-us/microsoft-365/sharepoint/) | Team collaboration |
+
+### Identity & Security
+
+| Service | Link | Purpose |
+|---------|------|---------|
+| Azure Entra ID | [azure.microsoft.com/entra](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) | Cloud IAM |
+| Okta | [okta.com](https://www.okta.com) | Identity management |
+| Auth0 | [auth0.com](https://auth0.com) | Authentication platform |
+| Ping Identity | [pingidentity.com](https://www.pingidentity.com) | Identity security |
+
+---
+
+## Key Learnings & Best Practices
+
+### Preparation (Mise en Place)
+1. Read requirements thoroughly
+2. Gather all tools and resources
+3. Prepare infrastructure and services
+4. Organize workstation with everything accessible
+5. Don't get lost in the details
+
+### Architecture Principles
+- **Think Modular:** Lego blocks, building blocks, TETRIS-like composition
+- **Learn From Others:** NYSE, market leaders, industry standards
+- **Embrace Diversity:** Multiple platforms, frameworks, cloud providers
+- **Document Everything:** Central wiki, runbooks, playbooks
+
+### Security First
+- **Zero Trust:** Least privilege, continuous verification
+- **MFA Everywhere:** Multi-factor authentication mandatory
+- **Encryption:** At rest and in transit
+- **Audit Logging:** Complete audit trail for compliance
+
+### Operations Excellence
+- **Automation:** Infrastructure as Code, CI/CD pipelines
+- **Monitoring:** Observability, logging, distributed tracing
+- **Resilience:** Circuit breakers, retries, bulkheads
+- **Scalability:** Horizontal scaling, load balancing, autoscaling
+
+---
+
+## Additional Resources
+
+- [MITRE ATT&CK](https://attack.mitre.org/) - Adversary tactics and techniques
+- [CIS Controls](https://www.cisecurity.org/cis-controls/) - Critical security controls
+- [Zero Security YouTube](https://www.youtube.com/zsecurity) - Security education
+- [CNCF Landscape](https://landscape.cncf.io/) - Cloud-native tools and services
+
+---
+
+**Last Updated:** 2026-08-26  
+**Status:** Ready for Implementation  
+**Audience:** Enterprise Architects, DevOps Engineers, System Administrators
