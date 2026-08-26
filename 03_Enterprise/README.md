@@ -4,10 +4,6 @@ A comprehensive guide for setting up enterprise infrastructure, managing identit
 
 **Estimated timeline:** 4-8 weeks for small-to-medium organizations (50-500 users)
 
-[MyAuth](https://www.dmdc.osd.mil/identitymanagement/app/) | [MyTime](https://get.mytime.com/) | [MyTrustMedical](https://www.mytrustmedical.com/)
-
-[AWS Compliance](https://aws.amazon.com/compliance/)
-
 ---
 
 ## Table of Contents
