@@ -16,8 +16,7 @@ site:
   template: book-theme
   options:
   #   favicon: favicon.ico
-  logo: _assets/Gemini_Generated_logo.png
-
+  logo: _assets/Untitled.png
 
   nav: []
   actions:
