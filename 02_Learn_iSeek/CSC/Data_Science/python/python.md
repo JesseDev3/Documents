@@ -132,7 +132,7 @@ These Python projects are designed to help final year students enhance their pro
 - **Python Animated GIF Generator Project**: A tool that creates animated GIFs from a series of images.
 - **Python Spelling Checker and Corrector**: A script that checks the spelling of words and suggests corrections.
 - **Python Voice Assistant Project**: (Think Jarvis) A voice-controlled assistant that can perform various tasks like setting reminders, searching the web, and more.
-- **Spatial Visualization**: Create an application that utilizes spatial visualizations using Syglass's "The Table" as a reference point. The idea should be thinking ahead with adding APIs. Personal example, **3D Globe, SIGINT and using intercepted comms**
+- **Spatial Visualization**: Create an application that utilizes spatial visualizations using **Syglass's "The Table"** as a reference point. The idea should be thinking ahead with adding APIs. Personal example, **3D Globe, SIGINT and using intercepted comms**
 
 ## Real-Life Applications of Machine Learning with Python
 
