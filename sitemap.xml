@@ -26,16 +26,13 @@
     <loc>http://localhost:3000/platforms</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-1</loc>
-  </url>
-  <url>
     <loc>http://localhost:3000/roadmap</loc>
   </url>
   <url>
     <loc>http://localhost:3000/servicenow</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-2</loc>
+    <loc>http://localhost:3000/readme-1</loc>
   </url>
   <url>
     <loc>http://localhost:3000/tools-list</loc>
@@ -44,7 +41,7 @@
     <loc>http://localhost:3000/readme2</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-3</loc>
+    <loc>http://localhost:3000/readme-2</loc>
   </url>
   <url>
     <loc>http://localhost:3000/elementdata</loc>
@@ -54,6 +51,9 @@
   </url>
   <url>
     <loc>http://localhost:3000/pubchem</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/readme-3</loc>
   </url>
   <url>
     <loc>http://localhost:3000/readme-4</loc>
@@ -66,9 +66,6 @@
   </url>
   <url>
     <loc>http://localhost:3000/readme-7</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/readme-8</loc>
   </url>
   <url>
     <loc>http://localhost:3000/index</loc>
@@ -89,13 +86,13 @@
     <loc>http://localhost:3000/fields</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-9</loc>
+    <loc>http://localhost:3000/readme-8</loc>
   </url>
   <url>
     <loc>http://localhost:3000/el9-setup</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-10</loc>
+    <loc>http://localhost:3000/readme-9</loc>
   </url>
   <url>
     <loc>http://localhost:3000/win-set</loc>
@@ -119,7 +116,7 @@
     <loc>http://localhost:3000/el9-sec</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-11</loc>
+    <loc>http://localhost:3000/readme-10</loc>
   </url>
   <url>
     <loc>http://localhost:3000/cloud</loc>
@@ -128,7 +125,7 @@
     <loc>http://localhost:3000/hypori-avd</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-12</loc>
+    <loc>http://localhost:3000/readme-11</loc>
   </url>
   <url>
     <loc>http://localhost:3000/vcfoperations</loc>
@@ -161,13 +158,13 @@
     <loc>http://localhost:3000/paths</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-13</loc>
+    <loc>http://localhost:3000/readme-12</loc>
   </url>
   <url>
     <loc>http://localhost:3000/sec</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-14</loc>
+    <loc>http://localhost:3000/readme-13</loc>
   </url>
   <url>
     <loc>http://localhost:3000/index-4</loc>
@@ -182,7 +179,7 @@
     <loc>http://localhost:3000/phage</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-15</loc>
+    <loc>http://localhost:3000/readme-14</loc>
   </url>
   <url>
     <loc>http://localhost:3000/index-7</loc>
@@ -194,7 +191,7 @@
     <loc>http://localhost:3000/index-9</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-16</loc>
+    <loc>http://localhost:3000/readme-15</loc>
   </url>
   <url>
     <loc>http://localhost:3000/index-10</loc>
@@ -215,19 +212,19 @@
     <loc>http://localhost:3000/index-12</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/readme-16</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/readme-17</loc>
   </url>
   <url>
     <loc>http://localhost:3000/readme-18</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-19</loc>
-  </url>
-  <url>
     <loc>http://localhost:3000/passive</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-20</loc>
+    <loc>http://localhost:3000/readme-19</loc>
   </url>
   <url>
     <loc>http://localhost:3000/index-13</loc>
@@ -236,7 +233,7 @@
     <loc>http://localhost:3000/n-bodysiulations</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-21</loc>
+    <loc>http://localhost:3000/readme-20</loc>
   </url>
   <url>
     <loc>http://localhost:3000/advanced2</loc>
@@ -263,7 +260,7 @@
     <loc>http://localhost:3000/spectrum-mngmt</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-22</loc>
+    <loc>http://localhost:3000/readme-21</loc>
   </url>
   <url>
     <loc>http://localhost:3000/iotmat</loc>
@@ -278,7 +275,7 @@
     <loc>http://localhost:3000/grid</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-23</loc>
+    <loc>http://localhost:3000/readme-22</loc>
   </url>
   <url>
     <loc>http://localhost:3000/index-15</loc>
@@ -296,7 +293,7 @@
     <loc>http://localhost:3000/apt</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-24</loc>
+    <loc>http://localhost:3000/readme-23</loc>
   </url>
   <url>
     <loc>http://localhost:3000/arch</loc>
@@ -306,6 +303,9 @@
   </url>
   <url>
     <loc>http://localhost:3000/devops</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/readme-24</loc>
   </url>
   <url>
     <loc>http://localhost:3000/security</loc>
