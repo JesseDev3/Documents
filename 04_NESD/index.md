@@ -10,7 +10,9 @@ SyGlass and the table. It wasn't an avatar. How I reacted (What is this?) and wh
 
 <div><iframe width="560" height="315" src="https://www.youtube.com/embed/Mluo2cdsEEk?si=s2RlOiFsgUd0jHdf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
-You can not say that there is no metal for this magnet to stick to.
+You can not say that there is no metal for this magnet to stick to. Also could you tell people I know something, if the implant doesn't exist?
+
+
 - [Qsharp IOT](https://github.com/jlabclouds/qsharpIoT) 
 
 I need to note the day, Terminal output
