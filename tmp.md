@@ -14,3 +14,77 @@ Learn how browser engines work before frontend performance tuning
 Learn regex before using form validators or scraping libraries
 Learn TCP/IP basics before using sockets or distributed systems
 Learn Linux fundamentals before managing servers or using CI/CD pipelines
+
+[Ubuntu](https://ubuntu.com/download) | [Byobu](https://byobu.org/) | [Anaconda Navigator](https://www.anaconda.com/docs/tools/anaconda-navigator/main) | [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/getting_started/overview.html) | [Programiz](https://www.programiz.com/) | [Kernels](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html#Kernels) | [JB Gallery](https://jupyterbook.org/gallery/) | [EB Gallery](https://executablebooks.org/en/latest/gallery/) 
+   * Ubuntu Server: desktop && flavours can be added/cycled. Otherwise standalone/wsl (**<wiki:Dependency_hell>**)
+
+### Training
+ - [ASE](https://ase-lib.org/examples_generated/tutorials/ase_database.html) / [MatSCI](https://matsci.org/) / [SciX](https://scixplorer.org/) ([YT](https://www.youtube.com/watch?v=7ELEYN5L49U)) 
+ - [How to Code in Quantum Machine Learning for Medical Applications](https://www.youtube.com/watch?v=tqVgZ8Av6BE)
+    * [ChemicalQDevice](https://github.com/kevinkawchak/LLMs-Pharmaceutical/tree/main) ([YT](https://www.youtube.com/@chemicalqdevice))
+    * [DWave](https://docs.dwavequantum.com/en/latest/)
+ - [Materials Project Seminars](https://www.youtube.com/c/MaterialsProject/playlists)
+    * [ATAT](https://axelvandewalle.github.io/www-avdw/atat/), [Elk Code](https://elk.sourceforge.io/), [ABINIT](https://www.abinit.org/)/[VASP](https://vasp.at), [NOMAD](https://nomad-lab.eu/), [GPAW](https://gpaw.readthedocs.io/), [Icet](https://gitlab.com/materials-modeling/icet-examples/-/tree/master/tutorials?ref_type=heads) > [Together](https://share.google/aimode/addbPfeCCFVL7ojYL)
+ - [Springer Training](https://www.springernature.com/gp/librarians/tools-services/learn/tutorials-training-sessions/databases)
+
+```{figure} https://github.com/rowanc1/pics/blob/main/mountains.png?raw=true
+:label: my-fig
+:align: center
+
+My **bold** mountain 🏔🚠.
+```
+
+Check out [](#my-fig)!!
+
+--- 
+
+Primordial <wiki:gravitational_waves> are hypothesized to arise from <wiki:cosmic_inflation>, a faster-than-light expansion just after the <wiki:big_bang>.
+
+---
+
+[](xref:spec/tables#example) | [](xref:guide/cross-references#targeting-cells) | [](xref:guide/external-references#myst-xref)
+
+---
+
+[#87](https://github.com/jupyter-book/myst-theme/pull/87)
+
+1. Using the title attribute in links:
+    * [link text](url "title")
+2. Using MyST's {doc} or other role syntax 
+    * external links, so roles might not be ideal
+
+---
+
+Training
+ - How to Code in Quantum Machine Learning for Medical Applications
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/tqVgZ8Av6BE?si=8CcVzsTRADQOJqBz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+ * [ChemicalQDevice](https://github.com/kevinkawchak/LLMs-Pharmaceutical/tree/main)
+
+---
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/kHobC1dock0?si=-a0d8fLVOLfPd7GP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+ - Helmholtz Cage: [Design, Applications and Impact](https://www.pnisensor.com/helmholtz-coil-design-applications-and-impact/)
+- *Not for "free energy" or "alternative propulsion"*
+- A spin on The holographic `principle`: Suggests the information inside a volume of space is fundamentally encoded on its boundary.
+
+Using a [Helmholtz Cage](https://www.pnisensor.com/helmholtz-coil-design-applications-and-impact/)-a device engineered to produce precisely uniform and controlled magnetic fields-to store information via magnetic particles touches on real quantum mechanics and data storage.
+- **Black Hole Analogy**: In physics, the **information paradox** proposes that the total amount information a black hole can store is mathematically equivalent to the surface area of its event horizon. It acts exactly like a cosmic hologram.
+- **The Data Sphere Concept**: When you attempt to write and read data by interacting with magnetic fields, you rely on how quantum states and magnetism are controlled. The use of highly concentrated magnetic waves or particles is actively being researched to build stable, error-resistant memory for [Quantum Computing](https://www.anl.gov/article/tiny-magnets-could-hold-the-secret-to-new-quantum-computers).
+- **Engineering Reality**: Conventional hard drives already use electromagnets to write zeros and ones as tiny magnetic polarities. Scientists have explored shrinking this down to just a dozen atoms per bit, or using 3D techniques for denser storage. A Helmholtz cage is traditionally used to calibrate sensors or simulate the magnetic environment of space, making it a perfect testing bed for advanced magnetic encoding.
+
+**See Also**: [Passive](https://github.com/ophelialabs/jb./tree/main/02_learn/Mathematics/Physics/passive)
+
+### Further Exploration: 
+Advanced Computing and Black Holes
+- Explore how advanced civilizations might use black holes to build quantum processors via [arXiv](https://arxiv.org/abs/2301.09575).
+- Discover how physicists actually recreate "black hole" dynamics inside current systems using [Quanta Magazine](https://www.quantamagazine.org/wormholes-reveal-a-way-to-manipulate-black-hole-information-in-the-lab-20200227/).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IWGOpuca7cs?si=EHeeZDK_B1EeZKbW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_F5PzgQxu9Y?si=jU1zOp-DS4N6G5xr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
