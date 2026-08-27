@@ -27,3 +27,13 @@ This section provides a starting point for mechanical and aerospace engineering 
 
 When extending this area, organize new material by discipline, mission or vehicle context, and lifecycle stage. Prefer linking to authoritative courses, laboratory procedures, design references, and project artifacts rather than reproducing them here.
 
+## Toolkits
+### MathWorks
+- [Matlab](https://www.mathworks.com/products/matlab.html) | [Space Systems](https://www.mathworks.com/solutions/aerospace-defense/space-systems.html) | [Satellite Communications Toolbox](https://www.mathworks.com/products/satellite-communications.html) [Docs](https://www.mathworks.com/help/satcom/getting-started-with-satellite-communications-toolbox.html) | [Radar and Communication System Design for Space Applications](https://www.mathworks.com/videos/radar-and-communication-system-design-for-space-applications-1780910956929.html) | [DigitalGlobe Simulates Complete Satellite-to-Ground Communications Systems](https://www.mathworks.com/company/user_stories/digitalglobe-simulates-complete-satellite-to-ground-communications-systems.html) | [Communications in Space](https://ch.mathworks.com/videos/communications-in-space-with-matlab-1649865558076.feedback.html) | [Satellite Scenario Key Concepts](https://www.mathworks.com/help/satcom/gs/satelliteScenario-key-concepts.html) | [YT](https://www.youtube.com/watch?v=e2Hz5r0dZCM)
+
+### Python
+- [PyPi]() | 
+
+### Julia
+- [satellitetoolbox.jl](https://julialang.org/blog/2025/01/the-satellite-toolbox-ecosystem/) | 
+
