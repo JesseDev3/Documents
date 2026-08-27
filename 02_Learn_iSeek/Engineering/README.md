@@ -9,6 +9,7 @@ This directory organizes engineering learning resources, research references, an
 - [Materials Engineering](Materials/README.md): materials science, nanotechnology, and textiles
 - [Network Engineering](Network/README.md): communications networks, spectrum, and next-generation wireless systems
 - [Nuclear Engineering](Nuclear/README.md): nuclear engineering education and research references
+- [Quantum Engineering](Quantum/index.md): quantum information, quantum networks, and quantum-enabled medical systems
 
 ## Resource Map
 

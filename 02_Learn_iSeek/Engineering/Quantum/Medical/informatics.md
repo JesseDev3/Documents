@@ -1,3 +1,6 @@
+ - [How to Code in Quantum Machine Learning for Medical Applications](https://www.youtube.com/watch?v=tqVgZ8Av6BE)
+    * [ChemicalQDevice](https://github.com/kevinkawchak/LLMs-Pharmaceutical/tree/main) ([YT](https://www.youtube.com/@chemicalqdevice))
+
 [Informatics](https://braininitiative.nih.gov) | [DABI]() | [AWS DANDI]() | [Data Acquisition](https://github.com/ophelialabs/ophelialabs.github.io/blob/main/pages/quantum/README2.md) |  [ESnet/DELERIA](https://newscenter.lbl.gov/2025/05/19/building-a-data-pipeline-to-accelerate-discovery/)
 
 # Comprehensive platforms

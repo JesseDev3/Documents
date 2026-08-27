@@ -4,6 +4,10 @@ A comprehensive guide for setting up enterprise infrastructure, managing identit
 
 **Estimated timeline:** 4-8 weeks for small-to-medium organizations (50-500 users)
 
+## Enterprise Structure
+
+- [Organization & Governance](organization-governance/README.md): corporate structure, subsidiaries, governance, legal, and shared services
+
 ---
 
 ## Table of Contents

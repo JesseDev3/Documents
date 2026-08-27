@@ -1,7 +1,7 @@
 ## Space Industry Partners
 [Space Systems Overview (PDF)](https://advancecasper.com/wp-content/uploads/2023/05/05-COL-PETERSON_Space-Command-Overview_-Aerospace-Defense-2023.pdf)
 
-### [NASA]
+### NASA
 
 [NASA](https://www.nasa.gov/) is a U.S. government agency responsible for civil space exploration, aeronautics, and space science.
 
