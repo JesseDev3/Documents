@@ -1,16 +1,131 @@
 ## Space Industry Partners
 
-- [NASA](https://www.nasa.gov/) - U.S. government agency responsible for civil space exploration, aeronautics, and space science.
-- [Lockheed Martin](https://www.lockheedmartin.com/en-us/) - Aerospace and defense company developing spacecraft, satellites, and space systems.
-- [General Atomics](https://www.ga.com/) - Advanced aerospace systems and technology.
-- [Lanteris](https://lanterisspace.com/) - Space technology solutions.
-- [Intuitive Machines](https://www.intuitivemachines.com/) - Commercial lunar services.
-- [Vantor](https://vantor.com/) | [Vantor WL-DS](https://www.l3harris.com/sites/default/files/2025-08/worldview-legion-data-sheet-l3harris-sas-ss.pdf) | [Vantor CSDAP](https://science.nasa.gov/earth-science/csda/vendor-vantor/) - Spatial intelligence company providing unified intelligence pictures to help decision-makers.
-- [Aldoria](https://www.aldoria.com/) - Space domain awareness and orbital intelligence.
-- [AeroAstro](https://aeroastro.mit.edu/news-impact/) - Aerospace research and space systems.
-- [Rohde & Schwarz](https://www.rohde-schwarz.com/) - Test and measurement solutions for communications.
-- [Globalstar](https://www.globalstar.com/en-us) - Global satellite services for communications.
-- [Iridium](https://www.iridium.com/) - Worldwide satellite communications provider.
+### [NASA]
+
+[NASA](https://www.nasa.gov/) is a U.S. government agency responsible for civil space exploration, aeronautics, and space science.
+
+| NASA Department or Area | Tool or Resource | Purpose |
+| --- | --- | --- |
+| NASA Open Source | [NASA Code](https://code.nasa.gov/) | Directory of NASA open-source software, projects, and code repositories. |
+| Science Mission Directorate | [NASA Science](https://science.nasa.gov/) | Research programs and missions covering Earth science, planetary science, astrophysics, and heliophysics. |
+| NASA Data and Computing | [NASA Open Data Portal](https://data.nasa.gov/) | Public datasets and APIs for research, analysis, and application development. |
+| Earth Science | [Earthdata](https://www.earthdata.nasa.gov/) | Access to NASA Earth-observation data, tools, and services. |
+| Planetary Science | [NASA Solar System Exploration](https://solarsystem.nasa.gov/) | Mission information, imagery, and educational resources for the solar system. |
+| Astrophysics | [NASA Astrophysics Data System](https://ui.adsabs.harvard.edu/) | Scientific literature and citation database for astronomy and physics. |
+| Space Technology Mission Directorate | [NASA Technology](https://www.nasa.gov/spacetech/) | Space technology programs, demonstrations, and technology development resources. |
+| Aeronautics Research Mission Directorate | [NASA Aeronautics](https://www.nasa.gov/aeronautics/) | Research, tools, and programs for aviation and advanced air-traffic systems. |
+| Human Spaceflight | [NASA Artemis](https://www.nasa.gov/artemis/) | Lunar exploration missions, systems, and supporting research. |
+| Engineering and Design | [NASA Systems Engineering Handbook](https://www.nasa.gov/reference/systems-engineering-handbook/) | Guidance for designing, developing, and managing complex aerospace systems. |
+
+### European Space Agency (ESA)
+
+[European Space Agency](https://www.esa.int/) is an intergovernmental organization dedicated to space exploration, Earth observation, scientific research, navigation, and space technology across Europe.
+
+| Department or Area | Tool or Resource | Purpose |
+| --- | --- | --- |
+| Earth Observation | [Earth Online](https://earth.esa.int/eogateway) | Access to ESA Earth-observation missions, data, and services. |
+| Science | [ESA Science and Exploration](https://www.esa.int/Science_Exploration) | Scientific missions, astronomy, planetary science, and exploration programs. |
+| Navigation | [Galileo](https://www.esa.int/Applications/Navigation/Galileo) | European global satellite navigation system and related technologies. |
+| Space Safety | [Space Safety](https://www.esa.int/Space_Safety) | Planetary defense, space debris, and space-weather activities. |
+| Open Data and Software | [ESA Open Access](https://open.esa.int/) | Open datasets, software, and technical resources from ESA projects. |
+| Education and Training | [ESA Education](https://www.esa.int/Education) | Educational programs, classroom resources, and student opportunities. |
+
+### Lockheed Martin
+
+[Lockheed Martin](https://www.lockheedmartin.com/en-us/) is an aerospace and defense company developing spacecraft, satellites, and space systems.
+
+| Department or Area | Tool or Resource | Purpose |
+| --- | --- | --- |
+| Space | [Space](https://www.lockheedmartin.com/en-us/who-we-are/business-areas/space.html) | Spacecraft, satellite, and exploration systems. |
+| Research and Development | [Advanced Technology Laboratories](https://www.lockheedmartin.com/en-us/who-we-are/business-areas/advanced-technology-laboratories.html) | Research and advanced technology development. |
+| Careers and Programs | [Early Careers](https://www.lockheedmartin.com/en-us/who-we-are/business-areas.html) | Overview of business areas and technical career paths. |
+
+### General Atomics
+
+[General Atomics](https://www.ga.com/) develops advanced aerospace systems and technology.
+
+| Department or Area | Tool or Resource | Purpose |
+| --- | --- | --- |
+| Space Systems | [General Atomics Electromagnetic Systems](https://www.ga.com/electromagnetic-systems) | Space, electromagnetic, and defense systems. |
+| Aircraft Systems | [General Atomics Aeronautical Systems](https://www.ga-asi.com/) | Unmanned aircraft and autonomous systems. |
+| Company Resources | [General Atomics News](https://www.ga.com/news) | Company announcements and technology developments. |
+
+### Lanteris Space Systems
+
+[Lanteris](https://lanterisspace.com/) develops space technology and satellite systems.
+
+| Department or Area | Tool or Resource | Purpose |
+| --- | --- | --- |
+| Satellite Platforms | [Lanteris Space Systems](https://lanterisspace.com/) | Company overview and satellite platform capabilities. |
+| News and Updates | [Lanteris News](https://lanterisspace.com/news/) | Company and program updates. |
+
+### Intuitive Machines
+
+[Intuitive Machines](https://www.intuitivemachines.com/) provides commercial lunar services and space systems.
+
+| Department or Area | Tool or Resource | Purpose |
+| --- | --- | --- |
+| Lunar Services | [Lunar Access Services](https://www.intuitivemachines.com/lunar-access-services) | Commercial payload delivery and lunar access. |
+| Space Systems | [Space Systems](https://www.intuitivemachines.com/space-systems) | Lunar and spaceflight hardware and services. |
+| Mission Operations | [Mission Control](https://www.intuitivemachines.com/mission-control) | Mission operations and lunar communications. |
+
+### Vantor
+
+[Vantor](https://vantor.com/) provides spatial intelligence and Earth-observation products.
+
+| Department or Area | Tool or Resource | Purpose |
+| --- | --- | --- |
+| Spatial Intelligence | [Vantor Platform](https://vantor.com/) | Unified spatial intelligence for decision-making. |
+| Satellite Data | [Vantor Worldview Legion Data Sheet](https://www.l3harris.com/sites/default/files/2025-08/worldview-legion-data-sheet-l3harris-sas-ss.pdf) | High-resolution satellite imagery capabilities. |
+| NASA Commercial Data | [Vantor CSDAP](https://science.nasa.gov/earth-science/csda/vendor-vantor/) | NASA commercial satellite data provider information. |
+
+### Aldoria
+
+[Aldoria](https://www.aldoria.com/) provides space domain awareness and orbital intelligence.
+
+| Department or Area | Tool or Resource | Purpose |
+| --- | --- | --- |
+| Space Domain Awareness | [Aldoria](https://www.aldoria.com/) | Orbital intelligence and space safety services. |
+| Company Resources | [Aldoria Insights](https://www.aldoria.com/insights/) | Analysis and updates on the space domain. |
+
+### AeroAstro
+
+[AeroAstro](https://aeroastro.mit.edu/news-impact/) provides aerospace research and space systems resources.
+
+| Department or Area | Tool or Resource | Purpose |
+| --- | --- | --- |
+| Aerospace Research | [AeroAstro News and Impact](https://aeroastro.mit.edu/news-impact/) | Research news and aerospace developments. |
+| Education and Research | [MIT AeroAstro](https://aeroastro.mit.edu/) | Academic programs, laboratories, and research areas. |
+
+### Rohde & Schwarz
+
+[Rohde & Schwarz](https://www.rohde-schwarz.com/) provides test and measurement solutions for communications.
+
+| Department or Area | Tool or Resource | Purpose |
+| --- | --- | --- |
+| Space and Satellite | [Space and Satellite Testing](https://www.rohde-schwarz.com/solutions/aerospace-defense/space-and-satellite/space-and-satellite_250642.html) | Test solutions for satellite and space communications. |
+| Wireless Communications | [Wireless Communications Testing](https://www.rohde-schwarz.com/solutions/wireless-communications-testing_229172.html) | RF, wireless, and communications testing resources. |
+| Knowledge and Training | [Application Notes and White Papers](https://www.rohde-schwarz.com/knowledge-center_229720.html) | Technical documentation and engineering guidance. |
+
+### Globalstar
+
+[Globalstar](https://www.globalstar.com/en-us) provides global satellite services for communications.
+
+| Department or Area | Tool or Resource | Purpose |
+| --- | --- | --- |
+| Satellite Services | [Globalstar Services](https://www.globalstar.com/en-us/products) | Satellite voice, messaging, and tracking services. |
+| Enterprise Solutions | [Business Solutions](https://www.globalstar.com/en-us/products/business) | Satellite connectivity for enterprise and field operations. |
+| Developer Resources | [Globalstar Developers](https://www.globalstar.com/en-us/products/iot) | Satellite IoT and connected-device solutions. |
+
+### Iridium
+
+[Iridium](https://www.iridium.com/) provides worldwide satellite communications.
+
+| Department or Area | Tool or Resource | Purpose |
+| --- | --- | --- |
+| Satellite Network | [Iridium Network](https://www.iridium.com/network/) | Global low-Earth-orbit satellite communications network. |
+| Products and Services | [Iridium Solutions](https://www.iridium.com/services/) | Voice, data, IoT, and critical communications services. |
+| Developer Resources | [Iridium Developer Portal](https://developer.iridium.com/) | APIs, documentation, and tools for Iridium-connected applications. |
 
 ## Cloud Ground Station
 
