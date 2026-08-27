@@ -1,4 +1,5 @@
 ## Space Industry Partners
+[Space Systems Overview (PDF)](https://advancecasper.com/wp-content/uploads/2023/05/05-COL-PETERSON_Space-Command-Overview_-Aerospace-Defense-2023.pdf)
 
 ### [NASA]
 
@@ -16,6 +17,11 @@
 | Aeronautics Research Mission Directorate | [NASA Aeronautics](https://www.nasa.gov/aeronautics/) | Research, tools, and programs for aviation and advanced air-traffic systems. |
 | Human Spaceflight | [NASA Artemis](https://www.nasa.gov/artemis/) | Lunar exploration missions, systems, and supporting research. |
 | Engineering and Design | [NASA Systems Engineering Handbook](https://www.nasa.gov/reference/systems-engineering-handbook/) | Guidance for designing, developing, and managing complex aerospace systems. |
+| Space Weather and Modeling | [CCMC NASA Models](https://ccmc.gsfc.nasa.gov/models/?services=Runs-on-Request&statuses=Production&statuses=Result+Only) | Community models, simulations, and runs for space-weather research. |
+| Advanced Computing | [NASA ACT](https://esto.nasa.gov/act/) | Advanced computing and technology research programs. |
+| Earth Observation | [NASA OPERA Products](https://www.jpl.nasa.gov/go/opera/products/) | Operational synthetic-aperture radar and optical Earth-observation products. |
+| Quantum Technologies | [NASA Quantum](https://esto.nasa.gov/quantum/) | Quantum computing and quantum sensing initiatives. |
+| Heliophysics | [Van Allen Belts Research](https://science.nasa.gov/biological-physical/stories/van-allen-belts/) | Research and educational material about Earth's radiation belts. |
 
 ### European Space Agency (ESA)
 

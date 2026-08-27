@@ -39,16 +39,6 @@ Learn more: [NASA Earthdata HDF5 Standards](https://www.earthdata.nasa.gov/about
 - [OCI Big Data](https://docs.oracle.com/en/middleware/goldengate/big-data/23/gadbd/overview-articles.html)
 - [Spring Data Cassandra](https://spring.io/projects/spring-data-cassandra)
 
-### NASA & Space
-
-- [CCMC NASA Models](https://ccmc.gsfc.nasa.gov/models/?services=Runs-on-Request&statuses=Production&statuses=Result+Only)
-- [Earthdata](https://earthdata.nasa.gov)
-- [NASA ACT](https://esto.nasa.gov/act/)
-- [NASA Opera Products](https://www.jpl.nasa.gov/go/opera/products/)
-- [NASA Quantum](https://esto.nasa.gov/quantum/)
-- [Van Allen Belts](https://science.nasa.gov/biological-physical/stories/van-allen-belts/)
-- [Space Systems Overview (PDF)](https://advancecasper.com/wp-content/uploads/2023/05/05-COL-PETERSON_Space-Command-Overview_-Aerospace-Defense-2023.pdf)
-
 ### Science & Research
 
 - [Kamiokande Project](https://www-sk.icrr.u-tokyo.ac.jp/en/sk/)
@@ -61,14 +51,6 @@ Learn more: [NASA Earthdata HDF5 Standards](https://www.earthdata.nasa.gov/about
 - [Learn MCP Server Catalog API](https://learn.microsoft.com/en-us/training/support/catalog-api-developer-reference)
 - [CopilotKit Agent Apps Guide](https://dev.to/copilotkit/heres-how-to-build-fullstack-agent-apps-gemini-copilotkit-langgraph-15jb)
 
-### Quantum & Algorithms
-
-- [Grover's Algorithm (Azure Quantum)](https://learn.microsoft.com/en-us/azure/quantum/concepts-grovers)
-
-### Satellite & Communications
-
-- [Globalstar](https://www.globalstar.com/en-us)
-- [Iridium](https://www.iridium.com/)
 
 ### IoT & Neurotech
 
