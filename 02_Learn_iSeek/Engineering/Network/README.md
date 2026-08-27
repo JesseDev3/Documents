@@ -1,3 +1,13 @@
+# Network Engineering
+
+This section is the engineering hub for communications networks, radio spectrum, IoT connectivity, reconfigurable wireless environments, and next-generation systems.
+
+## Navigation
+
+- [Quantum Networking](Quantum/README.md): quantum information, protocols, and network-oriented references
+
+The detailed spectrum and wireless systems documentation below remains the primary technical resource for this area.
+
 # Network Spectrum & Next-Generation Wireless Systems
 
 ## Overview

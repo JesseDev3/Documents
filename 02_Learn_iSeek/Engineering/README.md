@@ -1,4 +1,20 @@
-##  [Grainger College of Engineering | Illinois](https://courses.grainger.illinois.edu/)
+# Engineering Knowledge Hub
+
+This directory organizes engineering learning resources, research references, and technical study paths across the enterprise knowledge base. It is intended to help readers move from foundational coursework to specialized engineering domains without duplicating the source material maintained in each topic area.
+
+## Navigation
+
+- [Aerospace](Aerospace/README.md): mechanical, aerospace, satellite, and structures resources
+- [Biomedical Engineering](BioMedical/README.md): biomedical systems, biotechnology, and neural engineering
+- [Materials Engineering](Materials/README.md): materials science, nanotechnology, and textiles
+- [Network Engineering](Network/README.md): communications networks, spectrum, and next-generation wireless systems
+- [Nuclear Engineering](Nuclear/README.md): nuclear engineering education and research references
+
+## Resource Map
+
+The links below provide the shared academic foundation for this area, including computing, mathematics, physics, probability, machine learning, electronics, robotics, communications, and materials science. Topic-specific documentation should remain in the relevant subdirectory so that this index can serve as an entry point rather than a duplicate reference.
+
+## Grainger College of Engineering | Illinois
 
 
 - [Phys 486](https://courses.grainger.illinois.edu/PHYS486/fa2025/)

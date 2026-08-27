@@ -1,3 +1,0 @@
-- [Light-Responsive Materials in Droplet Manipulation for Biochemical Applications](https://advanced.onlinelibrary.wiley.com/doi/epdf/10.1002/adma.202313935)
-- [Huygens Optics](https://www.youtube.com/@HuygensOptics/videos)
-- [Advanced Optical Materials](https://advanced.onlinelibrary.wiley.com/journal/21951071)

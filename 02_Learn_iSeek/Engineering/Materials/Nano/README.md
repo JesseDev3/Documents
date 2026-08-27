@@ -1,8 +1,18 @@
+# Nanomaterials and Nanofabrication
+
+This section indexes resources for nanoscale materials, fabrication, surface science, lithography, and optical-material interactions. The technical notes already collected below should be treated as working reference material; authoritative procedures and published findings remain linked to their original sources.
+
+## Featured Resources
+
 - [Yale Institute for Nanoscience and Quantum Engineering](https://nano.yale.edu/manuals-documentation)
 - [EBPG HP RGS SOP](https://caltech.app.box.com/s/cf5ix7iraea7m3jepjwylf4nd51d8hrg)
 - [Advanced Research Center for NanoLithograpghy](https://ir.arcnl.nl/)
 - [SOLID-STATE-LASER-DRIVEN VAPORIZATION AND IONIZATION OF TIN](https://ir.arcnl.nl/pub/521/2025-PhD-Thesis-Dion-Engels.pdf)
 - [arcnl-materials-and-surface-science-for-euv-lithography](https://arcnl.nl/research-groups/materials-and-surface-science-for-euv-lithography)
+
+## Existing Technical Notes
+
+The material below covers UV and EUV manipulation, nanostructured solids, polymer additives, specialized optical devices, DUV LEDs, and associated efficiency challenges. Preserve these notes as a working knowledge layer and add focused pages when a topic requires a complete explanation, procedure, or literature review.
 
 Advanced materials manipulate UV light through various methods, including nanostructuring materials like bismuth or AlN to control its generation and path, and embedding additives into polymers to absorb, block, or stabilize against UV radiation. Other techniques involve using materials like sapphire with patterned surfaces to guide light emission, and specialized devices such as spatial light modulators with nanostructured aluminum mirrors to alter the phase and intensity of UV light. 
 Nanostructured materials
