@@ -65,10 +65,10 @@ Let's run those simulations at the same time
 4. Them: "Put him in a "**Container**" [(1)](https://ophelialabs.github.io/dev/03_networking/informatics2/).  [(2)](https://ophelialabs.github.io/dev/03_networking/informatics2/#Big-Bang-(The-Factory)), [(3)](https://ophelialabs.github.io/dev/03_networking/informatics2/#2.-Implementation-via-DevSecOps-(Big-Bang))
     - **Implant Phase. Note the Order Of Operations**
 
-5. Her: "What is his Itinerary? And what is the **Exit Strategy**"
+5. Her: "What is his Itinerary(MyTime)? And what is the **Exit Strategy**"
 6. Him: "Who are they on the **phone** with?" [(1)](https://ophelialabs.github.io/dev/03_networking/informatics2/#3.-Simplified-with-QICK) 
 7. Him: "Trying to do our job for us. **[Hand it off to me](https://www.syglass.io/academy/v/tracing-basics-fn2tc)**"
-8. Her: He's about to get control over this
+8. Her: He's about to get control over this **Note This**
     *  Me: Tried to name AI assistant "Cortana"
     *  Me: "This was built for me and you (Cortana) work for me now
        - Remember to treat it as an [internal]() tool
