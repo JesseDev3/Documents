@@ -3,18 +3,16 @@ title: MyNESD
 ---
 
 ![](./assets/br.png)
+
 Replace 4 w/ 6
 
 ![](./assets/nd.png)
+
 SyGlass and the table. It wasn't an avatar. How I reacted (What is this?) and what I tried to do.
 
 <div><iframe width="560" height="315" src="https://www.youtube.com/embed/Mluo2cdsEEk?si=s2RlOiFsgUd0jHdf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 - [Qsharp IOT](https://github.com/jlabclouds/qsharpIoT) 
-
-I need to note the day, Terminal output
- - error 
-on repeat
 
 # Seeing Things
 ![](./00_assets/implant.png)
