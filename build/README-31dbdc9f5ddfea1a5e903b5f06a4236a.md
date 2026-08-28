@@ -113,7 +113,7 @@ If you are analyzing a specific type of optical setup or imaging feed, let me kn
 - How **frequency-modulated light** separates a target signal from background noise.
 
 ## Staying Grounded
-To effectively identify the difference between your own internal self-talk and perceived external inputs, you can use structured mental grounding techniques. These exercises help your brain categorize thoughts by analyzing their origin, sensory details, and predictability.
+To effectively identify the difference between your own internal self-talk and perceived external inputs, you can use structured mental grounding techniques. These exercises help your brain categorize thoughts by analyzing their origin, sensory details, and predictability. Remember to create points of visual focus if it feels like brain fog.
 
 1. The Predictability Test
 - **Check the Timing**: Internal self-talk is always preceded by a subconscious intent. It matches your current train of thought perfectly.

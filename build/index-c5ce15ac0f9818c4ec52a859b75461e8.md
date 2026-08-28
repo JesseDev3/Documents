@@ -115,6 +115,8 @@ Let's run those simulations at the same time
 
 # Do NOT Negotiate With Terrorists
 ![](./00_assets/gaza_algae.jpg)
+   * Note any Apex and behind the Ear bumps that happen simultaneously
+   * Create daily logs with timestamps
    * Listen closely for clicks before comm, distinct
    * Look for **blurred rectangles and impressions in grass or footprints that appear behind the rectangles**
    * **Cover eyes (shirt, towel, hand) and look for green and red sources of light)**
