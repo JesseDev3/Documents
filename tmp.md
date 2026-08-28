@@ -88,3 +88,17 @@ Advanced Computing and Black Holes
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_F5PzgQxu9Y?si=jU1zOp-DS4N6G5xr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
+
+explore:
+- How modern hearing aids actually focus on voices.
+- The physical limits of neural signal detection.
+- How encryption protects wireless medical devices.
+
+We can look into:
+- The exact sensor types used in ear-canal EEG tracking.
+- How wireless medical security prevents unauthorized device-to-device pairing.
+- The physical laws governing electromagnetic wave propagation from the human body.
+- How cryptographic pairing keys lock out unauthorized devices.
+- The difference between hardwired ear-canal sensors and wireless radio antennas.
+- Micro-Antennas: The antennas inside these devices are microscopic and tuned to a very tight, low-power radius.
+- What a hacked or "unrestricted" hearing aid processor is physically capable of seeing.

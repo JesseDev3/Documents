@@ -6,9 +6,7 @@ youtube_videos:
 
 Set up so that this can easily pull from main documentation (i.e. - Robotics/iot & Network Engineering). Think of like the splitting of a cell.  
 
-[MyAuth](https://www.dmdc.osd.mil/identitymanagement/app/) | [MyTime](https://get.mytime.com/) | [MyTrustMedical](https://www.mytrustmedical.com/)
-
-[AWS Compliance](https://aws.amazon.com/compliance/)
+[MyAuth](https://www.dmdc.osd.mil/identitymanagement/app/) | [MyTime](https://get.mytime.com/) | [MyTrustMedical](https://www.mytrustmedical.com/) | [AWS Compliance](https://aws.amazon.com/compliance/)
 
 The teams funded under the NESD umbrella—such as UC Berkeley, Brown University, and Columbia University—were assigned very specific, hardwired anatomical tasks:
 - **The Visual Cortex Teams (Columbia and Berkeley)**: They use the 1,000,000-channel interface to record how the eyes see images, then use the 100,000 write-channels to flash matrix-like grids of light directly into the visual brain.
@@ -33,95 +31,6 @@ To address the bi-directional loop, the NESD specifications required the device 
 2. Full-Duplex (Simultaneous Read/Write)
 The most technologically difficult requirement of NESD was continuous, full-duplex interaction with a minimum of 1,000 neurons simultaneously. "Full-duplex" means the system can read how a local circuit is firing and instantly write a corrective or supplementary pulse into that exact same circuit at the exact same millisecond. [1](https://www.darpa.mil/research/programs/neural-engineering-system-design)
 
----
-
-Why can some bi-directional hearing aids overlap with the darpa nesd interfaces codec?
-
-Bi-directional hearing aids can overlap with the [DARPA NESD](https://www.darpa.mil/research/programs/neural-engineering-system-design) (Neural Engineering System Design) interface codec because both systems perform the same core function: translating raw, real-world sensory information into digital, binary signals.
-
-## Why the Overlap Occurs
-- Binary Translation: Both systems utilize a neural "codec" designed to convert electrochemical signaling (used by neurons in the brain) into ones and zeros. Modern "brain-controlled" hearing aids use similar decoding algorithms to translate **auditory cortex brain waves** into digital instructions, allowing the device to focus on a specific voice in a crowded room. With a certain level of access, the interface can pick up nearby hearing aid implants.
-
-- Two-Way Communication: Advanced, bi-directional hearing aids do not just amplify sound; they use sophisticated digital signal processing to analyze, encode, and transmit sound back and forth. NESD also relies on full-duplex communication—reading from and writing to thousands of neural channels simultaneously.
-- Neural-Based Audiology: The goal of the NESD program is to develop implantable, biocompatible neurotechnology that compensates for sensory deficits. As a result, neurological and audiological research often merge, leading hearing aid manufacturers to develop digital processors that mirror brain-computer interfaces. 
-
-[1](https://jacobsschool.ucsd.edu/news/release/2259?id=2259)
-
----
-
-## Different Digital Protocols
-- Hyper-Localized: Bi-directional hearing aids use short-range encryption (like localized Bluetooth) to talk only to their own paired smartphone or matching earbud.
-- No Cross-Talk: They cannot accidentally intercept **neural data** from a bypasser.
-- Strict Tuning: The algorithms are trained specifically to the unique brain-wave patterns of the individual wearer.
-
-To help explain further, let me know if you would like to explore:
-- How modern hearing aids actually focus on voices.
-- The physical limits of neural signal detection.
-- How encryption protects wireless medical devices.
-
-We can look into:
-- The exact sensor types used in ear-canal EEG tracking.
-- How wireless medical security prevents unauthorized device-to-device pairing. **Cough Cough** 
-- The physical laws governing electromagnetic wave propagation from the human body.
-- How cryptographic pairing keys lock out unauthorized devices.
-- The difference between hardwired ear-canal sensors and wireless radio antennas.
-- Micro-Antennas: The antennas inside these devices are microscopic and tuned to a very tight, low-power radius.
-- What a hacked or "unrestricted" hearing aid processor is physically capable of seeing.
-
---- 
-
-## Physical and electromagnetic layers.
-When dealing with low-power localized signals, securing the system requires isolating the physical environment and hardening the hardware against external injection.
-
-1. Physical and Electromagnetic Isolation
-- **Faraday Shielding**: Utilize conductive fabrics, copper-lined enclosures, or specialized headwear designed to attenuate RF (radio frequency) signals. This creates a physical barrier that blocks outside electromagnetic waves from reaching sensitive microvolt sensors.
-- **Passive Attenuation**: Use materials that absorb rather than reflect electromagnetic energy. This lowers the ambient signal-to-noise ratio, making it impossible for outside ambient signals to mimic local system inputs.
-- **Biomedical Isolation**: Ensure that any direct skin-contact sensors (like ear-canal contacts) use grounded shielding to prevent the human body from acting as an accidental antenna for external ambient electricity.
-- Magneto-Impedance effect
-
-2. Hardening the Hardware Communication Layer
-- **Disabling Wireless Radios**: Completely deactivate unneeded wireless protocols (such as standard Bluetooth or Wi-Fi discovery modes) at the hardware level. Operating in a "wired-only" or optically-isolated mode eliminates the primary remote attack vector.
-- **Signal Threshold Filtering**: Configure the system's analog-to-digital converters to automatically drop any signals that fall below or exceed a hyper-specific microvolt threshold. External signals pushed from a distance naturally degrade and fail these strict amplitude filters.
-- **Frequency Hopping (FHSS)**: If wireless transmission is mandatory, utilize proprietary, fast-sequence frequency hopping across a broad spectrum. This prevents an outside source from locking onto a single frequency to inject subtle, manipulative data packets. Until access level is reduced, it wont matter what channel (*see ctss & squelch*).
-
-3. Cryptographic and Behavioral Verification
-- **Zero Trust Data Whitelisting**: Implement a strict policy engine that only processes mathematically predefined, expected signal types. Any unexpected "trajectory" or anomaly in the data stream is immediately discarded as noise rather than processed as an instruction.
-- **Cryptographic Attestation**: Every data packet passing through the system's internal codec must be cryptographically signed by a local secure enclave. The processor will instantly reject unsigned or externally injected signals.
-
-If you want to focus on a specific method of defense, let me know if we should look into:
-- The specific **attenuation ratings** of electromagnetic shielding fabrics.
-- How **analog filters** separate local biological signals from external radio noise.
-- Implementing **hardware-level kill switches** for micro-antennas.
-
----
-
-Should anyone below TSC have knowledge?May 22, 2026
-
-Based on national security protocols, people without a Top Secret (TS) or equivalent clearance should not have access to classified technical data about classified programs like DARPA's NESD.
-
-Information access is governed by strict legal and security rules:
-
-## Security Clearance Levels
-- Top Secret (TS): Required for information where unauthorized disclosure could cause exceptionally grave damage to national security.
-- Secret: Required for information causing serious damage.
-- Confidential: Required for information causing damage.
-
-## The Need-to-Know Principle
-- **Clearance is Not Enough**: Having a Top Secret clearance alone does not grant access to sensitive technology.
-- **Specific Justification**: A person must also have an official, verified "need-to-know" to perform their specific government or military role.
-- **Compartmentalization**: Highly sensitive programs often require **Sensitive Compartmented Information (SCI)** access, creating isolated silos even among TS cleared personnel.
-
-## Unclassified vs. Classified Knowledge
-- **Public Information**: The broad, conceptual goals of DARPA's NESD are publicly published to invite research proposals from universities and private companies.
-- **Protected Details**: The specific military applications, hardware schematics, and cryptographic codes remain strictly classified and restricted to authorized personnel.
-
-If you want to understand how these security protocols work, let me know if we should explore:
-- How the "Need-to-Know" standard is legally enforced.
-- The difference between Public Domain DARPA research and Classified projects.
-- How security clearance background checks are conducted.
-
---- 
-
 In medical, surgical, and neurotechnological contexts, the term "curtain" can be used as a technical or metaphorical descriptor for the layer of stealth, separation, or filtering applied.
 
 ## Between an optical camera system and a patient
@@ -144,6 +53,39 @@ If you are looking at a specific type of procedure or tracking system, let me kn
 - How **infrared optical tracking** remains invisible to the human eye.
 - The role of **sterile fields and drapes** in awake cranial surgeries.
 - How **biometric data masking** works in medical imaging software.
+
+## Overhearing
+Bi-directional hearing aids can overlap with the [DARPA NESD](https://www.darpa.mil/research/programs/neural-engineering-system-design) (Neural Engineering System Design) interface codec because both systems perform the same core function: translating raw, real-world sensory information into digital, binary signals.
+- Binary Translation: Both systems utilize a neural "codec" designed to convert electrochemical signaling (used by neurons in the brain) into ones and zeros. Modern "brain-controlled" hearing aids use similar decoding algorithms to translate **auditory cortex brain waves** into digital instructions, allowing the device to focus on a specific voice in a crowded room. With a certain level of access, the interface can pick up nearby hearing aid implants.
+
+- Two-Way Communication: Advanced, bi-directional hearing aids do not just amplify sound; they use sophisticated digital signal processing to analyze, encode, and transmit sound back and forth. NESD also relies on full-duplex communication—reading from and writing to thousands of neural channels simultaneously.
+- Neural-Based Audiology: The goal of the NESD program is to develop implantable, biocompatible neurotechnology that compensates for sensory deficits. As a result, neurological and audiological research often merge, leading hearing aid manufacturers to develop digital processors that mirror brain-computer interfaces. 
+
+[1](https://jacobsschool.ucsd.edu/news/release/2259?id=2259)
+
+## NSP
+Based on national security protocols, people without a Top Secret (TS) or equivalent clearance should not have access to classified technical data about classified programs like DARPA's NESD.
+
+Information access is governed by strict legal and security rules:
+
+### Security Clearance Levels
+- Top Secret (TS): Required for information where unauthorized disclosure could cause exceptionally grave damage to national security.
+- Secret: Required for information causing serious damage.
+- Confidential: Required for information causing damage.
+
+### The Need-to-Know Principle
+- **Clearance is Not Enough**: Having a Top Secret clearance alone does not grant access to sensitive technology.
+- **Specific Justification**: A person must also have an official, verified "need-to-know" to perform their specific government or military role.
+- **Compartmentalization**: Highly sensitive programs often require **Sensitive Compartmented Information (SCI)** access, creating isolated silos even among TS cleared personnel.
+
+## Unclassified vs. Classified Knowledge
+- **Public Information**: The broad, conceptual goals of DARPA's NESD are publicly published to invite research proposals from universities and private companies.
+- **Protected Details**: The specific military applications, hardware schematics, and cryptographic codes remain strictly classified and restricted to authorized personnel.
+
+Explore:
+- How the "Need-to-Know" standard is legally enforced.
+- The difference between Public Domain DARPA research and Classified projects.
+- How security clearance background checks are conducted.
 
 ---
 
@@ -170,8 +112,7 @@ If you are analyzing a specific type of optical setup or imaging feed, let me kn
 - The use of **dual-band (red/green) imaging** in detecting subsurface structures.
 - How **frequency-modulated light** separates a target signal from background noise.
 
----
-
+## Staying Grounded
 To effectively identify the difference between your own internal self-talk and perceived external inputs, you can use structured mental grounding techniques. These exercises help your brain categorize thoughts by analyzing their origin, sensory details, and predictability.
 
 1. The Predictability Test
