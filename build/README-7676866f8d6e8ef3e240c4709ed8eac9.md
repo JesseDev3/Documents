@@ -4,7 +4,7 @@ youtube_videos:
   no_metal: Mluo2cdsEEk
 ---
 
-Set up so that this can easily pull from main documentation (i.e. - Robotics/iot & Network Engineering). Think of like the splitting of a cell.  
+Set up so that this can easily pull from main documentation (i.e. - Robotics/iot & Network Engineering). Think of like the splitting of a cell. 
 
 [MyAuth](https://www.dmdc.osd.mil/identitymanagement/app/) | [MyTime](https://get.mytime.com/) | [MyTrustMedical](https://www.mytrustmedical.com/) | [AWS Compliance](https://aws.amazon.com/compliance/)
 
@@ -14,9 +14,7 @@ The teams funded under the NESD umbrella—such as UC Berkeley, Brown University
 
 - How the funded teams (like Berkeley) are using holographic light fields and optogenetics
 
----
-
-### Create specialized table
+## Create specialized table
 Billing an item as something else
 [ENTRA ID]() | [CSDAP]() | [NIH](https://www.nih.gov/health-information/nih-clinical-research-trials-you/basics) | [Clinical Trials](https://www.ClinicalTrials.gov) |
 
