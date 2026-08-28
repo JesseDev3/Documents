@@ -109,6 +109,7 @@ Let's run those simulations at the same time
 	14:57 - (note time returns) : silence, big mad. Plotting? what to expect? 
 
 - 08/27/2026 20:17 - No Weight
+- 08/28/26 15:19: to do
 
 **Note**: This is to the point! and not updated unless the scientific method has been applied. Whether **video or not**.**ZERO**-trust (Responding "Negative" to every *subliminal* (what it feels like) thought, noting that if it feels like wordart or if you can isolate it as originating from the bottom right), **dont get hooked, stay centered, and remember emotional baseline** since the objective is to effectively [piggyback](02_medical/index.md#Manipulation Risks).
 
@@ -117,7 +118,7 @@ Let's run those simulations at the same time
 # Do NOT Negotiate With Terrorists
 ![](./00_assets/gaza_algae.jpg)
    * Note any Apex and behind the Ear bumps that happen simultaneously
-   * Create daily logs with timestamps
+   * Create daily logs with timestamps (Find a way to easily implement transcribe for the user, see [](https://jessedev3.github.io/Documents/administer/#supplementary-implementation)?)
    * Listen closely for clicks before comm, distinct
    * Look for **blurred rectangles and impressions in grass or footprints that appear behind the rectangles**
    * **Cover eyes (shirt, towel, hand) and look for green and red sources of light)**
