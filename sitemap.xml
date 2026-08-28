@@ -77,9 +77,6 @@
     <loc>http://localhost:3000/dns</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/fields</loc>
-  </url>
-  <url>
     <loc>http://localhost:3000/readme-12</loc>
   </url>
   <url>
@@ -138,9 +135,6 @@
   </url>
   <url>
     <loc>http://localhost:3000/gui-builders</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/api</loc>
   </url>
   <url>
     <loc>http://localhost:3000/leadjavadeveloper</loc>
@@ -317,6 +311,9 @@
     <loc>http://localhost:3000/readme-42</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/api</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/readme2-1</loc>
   </url>
   <url>
@@ -357,6 +354,9 @@
   </url>
   <url>
     <loc>http://localhost:3000/readme-46</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/fields</loc>
   </url>
   <url>
     <loc>http://localhost:3000/readme-47</loc>
