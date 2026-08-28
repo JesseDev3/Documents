@@ -46,7 +46,6 @@ Implanting an individual with a highly invasive neural interface when less drast
 
 [Python: Add Images](02_medical/index.md)
 
-
 - Her: "You told me he wouldn't see us"
 - v1:(08/01/23-02/01/24) => [CSDAP]()
 - `Research for an Adeno Assisted Virus`
