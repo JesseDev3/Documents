@@ -55,3 +55,39 @@ Starting a new "<wiki:Greenfield_project>" project is an exciting opportunity be
 - Which frontend stack do you prefer to use for the visual cards (e.g., React, Vue, vanilla HTML/Tailwind, or a mobile framework)?
 - What kind of API data will these cards display, and do you already have a public or custom backend API ready to supply it?
 - Do you want this greenfield project to serve as a reusable library (like an NPM package) that other projects can import, or is it a standalone application?
+
+To create JSON cards for algorithms, you need a structured schema that balances readability, flexibility, and completeness. This format is perfect for flashcard apps, developer documentation, or API endpoints.
+
+Standard JSON Schema for Algorithm Cards
+```json
+{
+  "id": "alg_001",
+  "name": "Binary Search",
+  "category": "Searching",
+  "difficulty": "Easy",
+  "summary": "Finds the position of a target value within a sorted array by repeatedly dividing the search interval in half.",
+  "complexity": {
+    "time": {
+      "best": "O(1)",
+      "average": "O(log n)",
+      "worst": "O(log n)"
+    },
+    "space": "O(1)"
+  },
+  "constraints": [
+    "Array must be sorted."
+  ],
+  "code_snippet": {
+    "language": "javascript",
+    "source": "function binarySearch(arr, target) {\n  let left = 0, right = arr.length - 1;\n  while (left <= right) {\n    const mid = Math.floor((left + right) / 2);\n    if (arr[mid] === target) return mid;\n    if (arr[mid] < target) left = mid + 1;\n    else right = mid - 1;\n  }\n  return -1;\n}"
+  },
+  "tags": ["divide-and-conquer", "arrays", "pointers"]
+}
+```
+
+Core Fields to Include
+- Metadata: Use unique strings for id, category, and difficulty to make filtering and sorting easy.
+- Complexity Object: Separate time and space complexities. Break time down into best, average, and worst cases.
+- Prerequisites/Constraints: Vital for algorithms (e.g., "graph must be acyclic" or "array must be sorted").
+- Escaped Code Strings: Store your code snippets with standard newline (\n) escaping so frontend UI components can render them cleanly inside code blocks.
+
