@@ -109,6 +109,8 @@ Let's run those simulations at the same time
 	- If thats the case, how did it change last minute along with emotional influence and manipulation
 	14:57 - (note time returns) : silence, big mad. Plotting? what to expect? 
 
+- 08/27/2026 20:17 - No Weight
+
 **Note**: This is to the point! and not updated unless the scientific method has been applied. Whether **video or not**.**ZERO**-trust (Responding "Negative" to every *subliminal* (what it feels like) thought, noting that if it feels like wordart or if you can isolate it as originating from the bottom right), **dont get hooked, stay centered, and remember emotional baseline** since the objective is to effectively [piggyback](02_medical/index.md#Manipulation Risks).
 
 ---
