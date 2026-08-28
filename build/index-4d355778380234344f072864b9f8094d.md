@@ -39,6 +39,7 @@ SyGlass and the table. It wasn't an avatar. How I reacted (What is this?) and wh
 - I will always be a firm believer that once a schedule is published, if it is unpublished for changes, the affected team members whose schedule has been edited should be notified via email and text.
 
 ![](./assets/00_assets/labrat.png)
+
 Implanting an individual with a highly invasive neural interface when less drastic options exist suggests an intent to override user autonomy and secure a predetermined outcome. Choosing an invasive physical implant bypasses standard ethical frameworks and safer methodology, when simpler non-invasive methods are available, **strongly** signals an **intent to actively manipulate and control the outcome**, and **for experimentation**.
 
 [External Lasers for Deep Stimulation](01_guide/getting_started.md)

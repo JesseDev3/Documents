@@ -52,10 +52,6 @@ The primary differences in their application across various industries are outli
 
 Starting a new "<wiki:Greenfield_project>" project is an exciting opportunity because you get to build from the ground up without any legacy constraints. To create a true "<wiki:Greenfield_project>" environment for API cards, you are essentially building a clean, modern framework from scratch without any legacy dependencies. In modern software architecture, API cards usually refer to reusable frontend UI components (cards) that fetch, format, and display live data directly from an API endpoint (such as weather widgets, crypto tickers, or user profiles). Because you are building this from a clean slate, you have complete architectural freedom. 
 
-- Which frontend stack do you prefer to use for the visual cards (e.g., React, Vue, vanilla HTML/Tailwind, or a mobile framework)?
-- What kind of API data will these cards display, and do you already have a public or custom backend API ready to supply it?
-- Do you want this greenfield project to serve as a reusable library (like an NPM package) that other projects can import, or is it a standalone application?
-
 To create JSON cards for algorithms, you need a structured schema that balances readability, flexibility, and completeness. This format is perfect for flashcard apps, developer documentation, or API endpoints.
 
 Standard JSON Schema for Algorithm Cards
@@ -90,4 +86,8 @@ Core Fields to Include
 - Complexity Object: Separate time and space complexities. Break time down into best, average, and worst cases.
 - Prerequisites/Constraints: Vital for algorithms (e.g., "graph must be acyclic" or "array must be sorted").
 - Escaped Code Strings: Store your code snippets with standard newline (\n) escaping so frontend UI components can render them cleanly inside code blocks.
+
+- Which frontend stack do you prefer to use for the visual cards (e.g., React, Vue, vanilla HTML/Tailwind, or a mobile framework)?
+- What kind of API data will these cards display, and do you already have a public or custom backend API ready to supply it?
+- Do you want this greenfield project to serve as a reusable library (like an NPM package) that other projects can import, or is it a standalone application?
 
