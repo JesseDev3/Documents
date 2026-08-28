@@ -272,43 +272,13 @@
     <loc>http://localhost:3000/smartwatch</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-30</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/readme-31</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/consumerbehavior</loc>
-  </url>
-  <url>
     <loc>http://localhost:3000/index-9</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/readme-30</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/index-10</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/grid</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/launchvehicles</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/readme-32</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/apt2</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/apt</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/index-11</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/readme-33</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/index-12</loc>
   </url>
   <url>
     <loc>http://localhost:3000/index2-2</loc>
@@ -317,13 +287,13 @@
     <loc>http://localhost:3000/index3</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/readme-34</loc>
+    <loc>http://localhost:3000/readme-31</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/index-13</loc>
+    <loc>http://localhost:3000/index-11</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/index-14</loc>
+    <loc>http://localhost:3000/index-12</loc>
   </url>
   <url>
     <loc>http://localhost:3000/stack</loc>
@@ -332,7 +302,7 @@
     <loc>http://localhost:3000/bio-assets</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/index-15</loc>
+    <loc>http://localhost:3000/index-13</loc>
   </url>
   <url>
     <loc>http://localhost:3000/administer</loc>
@@ -344,7 +314,37 @@
     <loc>http://localhost:3000/opto-1</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/readme-32</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/readme-33</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/readme-34</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/consumerbehavior</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/index-14</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/index-15</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/grid</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/launchvehicles</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/readme-35</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/apt2</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/apt</loc>
   </url>
   <url>
     <loc>http://localhost:3000/readme-36</loc>
