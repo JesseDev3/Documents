@@ -118,9 +118,9 @@ Let's run those simulations at the same time
 # Do NOT Negotiate With Terrorists
 ![](./00_assets/gaza_algae.jpg)
    * Note any Apex and behind the Ear bumps that happen simultaneously
-   * Create daily logs with timestamps (Find a way to easily implement transcribe for the user, see [](https://jessedev3.github.io/Documents/administer/#supplementary-implementation)?)
+   * Create daily logs with timestamps (Find a way to easily implement transcribe for the user, see [Supplementary Implementation](https://jessedev3.github.io/Documents/administer/#supplementary-implementation)?)
    * Listen closely for clicks before comm, distinct
-   * Look for **blurred rectangles and impressions in grass or footprints that appear behind the rectangles**
+   * Look for **blurred rectangles and impressions in grass or footprints that appear behind the rectangles** see [Quantum Stealth](https://jessedev3.github.io/Documents/readme-48/#between-an-optical-camera-system-and-a-patient)
    * **Cover eyes (shirt, towel, hand) and look for green and red sources of light)**
    * When reviewing footage, red and green spectrums work best. 
 07/27/26 08:03: These are not **what ifs**. Where in the docs is a what if? These are ***direct responses***
