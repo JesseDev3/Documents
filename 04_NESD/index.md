@@ -20,7 +20,7 @@ SyGlass and the table. It wasn't an avatar. How I reacted (What is this?) and wh
 1A: DARPA's [NESD](https://www.darpa.mil/research/programs/neural-engineering-system-design) program has developed a **minimally invasive** implantable, high-resolution [neural interface](https://pubs.rsc.org/en/content/articlepdf/2025/mh/d4mh01854k). Think **[Bi-Directional](https://support.apple.com/en-us/106341)** Bone Anchored (Cochleal) Hearing Systems, or Behind The Ear Hearing Aids.
 Means at least 08/01/23 (2.5 yrs) disappointing on my part honestly, to present.
 
-- If it looks like and it smells like it, then...
+- If it looks and smells like it, then...
 - All because **I wanted to print an instructional return process sheet for my coworker**
 - Whatever it is with **Salesforce** that gave **Shareholder** access during the backend transition period with Wal-Mart (eg... Shipt, Uber, Third Party Delivery (Last Mile), otherwise how do I know about [servicenow kb](https://support.servicenow.com/kb?id=kb_home) / [Sponsorship](https://share.google/aimode/wxE8Z3jhnt8B254Pi) and how you can benefit company?... **Thats not on me**
 - **Explicitly** provided instructions to join [confluence/jira](https://www.atlassian.com/)
