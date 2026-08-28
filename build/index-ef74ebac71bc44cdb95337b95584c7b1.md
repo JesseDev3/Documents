@@ -128,6 +128,7 @@ Let's run those simulations at the same time
 - Its not "does it justify" at this point, you can NOT be real, if so, you are ***not justices*** (lower caps on purpose), ***nor do you deserve the seat.***
 - Remember who you are, being implanted and hijacked is `NOT AMERICAN`
 - [Psychological Warfare]() | [Learned Helplessness]() | [Counter Intelligence]() | [1](https://share.google/aimode/GT8QVoCJNxMhWmDjX) | [2](https://share.google/aimode/JCu4XfOsYUc6DXwYo) (https://share.google/aimode/wRjK9mBnjBANLHI3M no longer works)
+- Always be aware of *psychological* forms of trust
 
 
 - I thought psyops when I first started working at `Target` and how it seemed like I could `hear the cameras`. At first I **thought** it was the camera speaker projecting audio and that is was a mal-formed setup, all while actively responding (what a joke).
